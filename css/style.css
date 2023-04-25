@@ -1,0 +1,469 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Allerta+Stencil&family=Braah+One&family=Bruno+Ace+SC&family=Stick+No+Bills:wght@800&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+html {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  font-size: 62.5%;
+}
+html ::-webkit-scrollbar {
+  width: 8px;
+}
+html ::-webkit-scrollbar-track {
+  background-color: #ffffff;
+}
+html ::-webkit-scrollbar-thumb {
+  max-height: 10px;
+  background-color: #770000;
+  border-radius: 0px;
+}
+html ::-webkit-scrollbar-thumb:hover {
+  background-color: #a10000;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  scroll-behavior: smooth;
+  background-color: rgb(0, 0, 92);
+}
+body .intro {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 3;
+  background-color: #ffffff;
+  transition: 1s;
+}
+body .intro img {
+  width: 300px;
+}
+body .intro p {
+  color: rgb(0, 0, 0);
+  font-size: 1.6rem;
+  margin-top: 20px;
+}
+body .intro .logoIntroH1 {
+  margin-top: 20px;
+  font-size: 3.2rem;
+  font-weight: bold;
+  color: rgb(0, 0, 0);
+  text-shadow: 0px 0px 10px rgb(255, 0, 0);
+}
+body .intro .logoIntroH1 .logo-partes {
+  position: relative;
+  bottom: -20px;
+  display: inline-block;
+  opacity: 0;
+}
+body .intro .logoIntroH1 .logo-partes.activeMenuIntro {
+  bottom: 0;
+  opacity: 1;
+  transition: ease-in-out 0.5s;
+}
+body .intro .logoIntroH1 .logo-partes.fadeIntro {
+  bottom: 250px;
+  opacity: 0;
+  transition: ease-in-out 0.5s;
+}
+body header {
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  background-color: #fff;
+  border-bottom: 1px solid #961616;
+  box-shadow: 0px 1px 5px 1px black;
+  z-index: 2;
+}
+body header .navbar {
+  min-height: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 24px;
+}
+body header .navbar #mensagem {
+  position: absolute;
+  top: 75px;
+  left: -2px;
+  width: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 25px;
+  padding: 15px;
+  font-size: 1.5rem;
+  background: rgba(255, 255, 255, 0.534);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border-radius: 0px 5px 5px 0px;
+  font-weight: bold;
+  text-shadow: 0px 0px 4px rgb(255, 255, 255);
+  font-family: "Stick No Bills", sans-serif;
+  cursor: pointer;
+}
+body header .navbar #mensagem.aberto {
+  color: green;
+  border: 1px solid green;
+}
+body header .navbar #mensagem.fechado {
+  color: rgb(145, 3, 3);
+  border: 1px solid white;
+}
+body header .navbar .nav-logo {
+  font-family: "Stick No Bills", sans-serif;
+  letter-spacing: 2px;
+  font-size: 40px;
+  color: #961616;
+  font-weight: bold;
+}
+body header .navbar .nav-menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body header .navbar .nav-menu .nav-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 20px;
+}
+body header .navbar .nav-menu .nav-item .nav-link {
+  color: #961616;
+  font-weight: bold;
+  font-size: 1.5rem;
+  font-family: "Braah One", sans-serif;
+  transition: 0.7s ease-in-out;
+}
+body header .navbar .nav-menu .nav-item .nav-link:hover {
+  color: rgb(253, 17, 0);
+  border-bottom: 1px solid red;
+}
+body header .navbar .hamburger {
+  background-color: transparent;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  text-align: center;
+  right: 10px;
+  border: 1px solid transparent;
+  display: none;
+  cursor: pointer;
+  padding-top: 5px;
+}
+body header .navbar .hamburger .bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  background-color: #961616;
+}
+body .slider {
+  position: relative;
+  width: 100%;
+  background-color: rgb(80, 80, 80);
+}
+body .slider .myslider {
+  height: 100vh;
+  overflow: hidden;
+  display: none;
+}
+body .slider .myslider .sliderTxt {
+  position: absolute;
+  color: white;
+  letter-spacing: 2px;
+  line-height: 35px;
+  top: 40%;
+  left: 15%;
+  -webkit-animation-name: posi;
+  -webkit-animation-duration: 2s;
+  animation-name: posi;
+  animation-duration: 2s;
+  z-index: 1;
+}
+body .slider .myslider .sliderTxt h1 {
+  color: #961616;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+body .slider .myslider .sliderTxt p {
+  font-weight: bold;
+  font-size: 20px;
+}
+body .slider .myslider img {
+  width: 100%;
+  height: 100%;
+  transform: scale(1.5, 1.5);
+  -webkit-animation-name: zoomin;
+  -webkit-animation-duration: 40s;
+  animation-name: zoomin;
+  animation-duration: 40s;
+}
+body .slider .slideNext {
+  right: 0;
+}
+body .slider .slidePrev,
+body .slider .slideNext {
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+  font-size: 50px;
+  padding: 15px;
+  cursor: pointer;
+  transition: 0.1s;
+  color: white;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
+body .slider .slidePrev:hover,
+body .slider .slideNext:hover {
+  color: #961616;
+}
+body .slider .dotsbox {
+  position: absolute;
+  text-align: center;
+  left: 50%;
+  transform: translate(-50%);
+  bottom: 20px;
+  cursor: pointer;
+}
+body .slider .dotsbox .dot {
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  border: 3px solid #fff;
+  margin: 0 10px;
+  cursor: pointer;
+}
+body .slider .dotsbox .activeSlide, body .slider .dotsbox .dot:hover {
+  border-color: #961616;
+}
+body .slider .slideFade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+@keyframes fade {
+  from {
+    opacity: 0.8;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes posi {
+  from {
+    left: 25%;
+  }
+  to {
+    left: 15%;
+  }
+}
+@keyframes zoomin {
+  from {
+    transform: scale(1, 1);
+  }
+  to {
+    transform: scale(1.5, 1.5);
+  }
+}
+
+/* Estilos para tablets com largura mínima de 521px e máxima de 800px */
+@media (min-width: 521px) and (max-width: 800px) {
+  body {
+    background-color: aqua;
+  }
+  body .intro img {
+    width: 290px;
+  }
+  body .intro p {
+    color: rgb(0, 0, 0);
+    font-size: 2rem;
+    margin-top: 20px;
+  }
+  body .intro .logo {
+    margin-top: 10px;
+    font-size: 2.8rem;
+  }
+  body header .navbar .nav-logo {
+    margin: 0 auto;
+  }
+  body header .navbar .nav-menu {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    position: fixed;
+    left: -100%;
+    top: 70px;
+    gap: 0;
+    flex-direction: column;
+    background-color: #ffffff;
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+    transition: 0.3s;
+  }
+  body header .navbar .nav-menu .nav-item {
+    width: 80%;
+    padding: 5px;
+    margin: 30px 0 0 0;
+    border-bottom: 2px solid #961616;
+  }
+  body header .navbar .nav-menu.activeMenu {
+    left: 0;
+  }
+  body header .navbar .hamburger {
+    display: block;
+  }
+  body header .navbar .hamburger.activeMenu .bar:nth-child(2) {
+    opacity: 0;
+  }
+  body header .navbar .hamburger.activeMenu .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+  body header .navbar .hamburger.activeMenu .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+  body .slider {
+    position: relative;
+    width: 100%;
+    background-color: rgb(80, 80, 80);
+  }
+  body .slider .myslider {
+    height: 500px;
+  }
+  body .slider .myslider .sliderTxt {
+    line-height: 25px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-animation-name: posi2;
+    -webkit-animation-duration: 2s;
+    animation-name: posi2;
+    animation-duration: 2s;
+  }
+  body .slider .myslider .sliderTxt h1 {
+    font-size: 40px;
+  }
+  body .slider .myslider .sliderTxt p {
+    font-size: 13px;
+  }
+  body .slider .myslider img {
+    width: 100%;
+    height: 100%;
+    transform: scale(1.5, 1.5);
+    -webkit-animation-name: zoomin;
+    -webkit-animation-duration: 40s;
+    animation-name: zoomin;
+    animation-duration: 40s;
+  }
+  @keyframes fade {
+    from {
+      opacity: 0.8;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  @keyframes posi2 {
+    from {
+      left: 35%;
+    }
+    to {
+      left: 50%;
+    }
+  }
+  @keyframes zoomin {
+    from {
+      transform: scale(1, 1);
+    }
+    to {
+      transform: scale(1.5, 1.5);
+    }
+  }
+}
+/* Estilos para celulares com largura máxima de 520px */
+@media (max-width: 520px) {
+  body {
+    background-color: black;
+  }
+  body header .navbar .nav-logo {
+    margin: 0 auto;
+  }
+  body header .navbar .nav-menu {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    position: fixed;
+    left: -100%;
+    top: 70px;
+    gap: 0;
+    flex-direction: column;
+    background-color: #ffffff;
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+    transition: 0.3s;
+  }
+  body header .navbar .nav-menu .nav-item {
+    width: 80%;
+    padding: 5px;
+    margin: 30px 0 0 0;
+    border-bottom: 2px solid #961616;
+  }
+  body header .navbar .nav-menu.activeMenu {
+    left: 0;
+  }
+  body header .navbar .hamburger {
+    display: block;
+  }
+  body header .navbar .hamburger.activeMenu .bar:nth-child(2) {
+    opacity: 0;
+  }
+  body header .navbar .hamburger.activeMenu .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+  body header .navbar .hamburger.activeMenu .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+  body .slider .myslider {
+    height: 400px;
+  }
+  body .slider .myslider .sliderTxt h1 {
+    font-size: 30px;
+  }
+  body .slider .dotsbox .dot {
+    margin: 0 4px;
+  }
+  body .slider .slidePrev,
+  body .slider .slideNext {
+    position: absolute;
+    top: calc(70px + 50%);
+    transform: translate(0, -100%);
+    font-size: 30px;
+    padding: 15px;
+  }
+}/*# sourceMappingURL=style.css.map */

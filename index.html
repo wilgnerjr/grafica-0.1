@@ -1,12 +1,133 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vermelhinho 0.1</title>
+
+    <!-- ==========CSS========== -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- ==========TITULO========== -->
+    <link rel="shortcut icon" href="images/letra-v-png.png" type="image/x-icon">
+    <title>VERMELHINHO</title>
 </head>
-<body>
-    
+
+<!-- ==========BODY========== -->
+
+<body id="body">
+
+    <!-- ==========INTRODUÇÂO========= -->
+    <div class="intro">
+        <img src="images/logoIntrodutoria.webp" alt="logo Introdutoria">
+        <h1 class="logoIntroH1">
+            <span class="logo-partes">V</span>
+            <span class="logo-partes">E</span>
+            <span class="logo-partes">R</span>
+            <span class="logo-partes">M</span>
+            <span class="logo-partes">E</span>
+            <span class="logo-partes">L</span>
+            <span class="logo-partes">H</span>
+            <span class="logo-partes">I</span>
+            <span class="logo-partes">N</span>
+            <span class="logo-partes">H</span>
+            <span class="logo-partes">O</span>
+        </h1>
+        <p class="intro-p">Seu projeto, nossa missão!</p>
+    </div>
+
+    <!-- ==========HEADER========== -->
+    <header>
+        <!-- ==========MENU DE NAVEGAÇÃO========== -->
+        <nav class="navbar">
+            <p id="mensagem" class=""></p>
+            <a href="#" class="nav-logo">VERMELHINHO</a>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="#home" class="nav-link" onclick="esconder()">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#sobre" class="nav-link" onclick="esconder()">Sobre</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#servicos" class="nav-link" onclick="esconder()">Serviços</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#clientes" class="nav-link" onclick="esconder()">Clientes</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contato" class="nav-link" onclick="esconder()">Contato</a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <!-- ==========SLIDER========== -->
+        <div class="slider">
+            <div class="myslider slideFade" style="display: block;">
+                <div class="sliderTxt">
+                    <h1>IMAGE 1</h1>
+                    <p>DEVELOPER <br> Lorem ipsum, dolor sitque illum beatae!</p>
+                </div>
+                <img src="images/img1.jpg" alt="img1">
+            </div>
+            <div class="myslider slideFade">
+                <div class="sliderTxt">
+                    <h1>IMAGE 2</h1>
+                    <p>DEVELOPER <br> Lorem ipsum, dolor sitque illum beatae!</p>
+                </div>
+                <img src="images/img2.jpg" alt="img2">
+            </div>
+            <div class="myslider slideFade">
+                <div class="sliderTxt">
+                    <h1>IMAGE 3</h1>
+                    <p>DEVELOPER <br> Lorem ipsum, dolor sitque illum beatae!</p>
+                </div>
+                <img src="images/img3.jpg" alt="img3">
+            </div>
+            <div class="myslider slideFade">
+                <div class="sliderTxt">
+                    <h1>IMAGE 4</h1>
+                    <p>DEVELOPER <br> Lorem ipsum, dolor sitque illum beatae!</p>
+                </div>
+                <img src="images/img4.jpg" alt="img4">
+            </div>
+            <div class="myslider slideFade">
+                <div class="sliderTxt">
+                    <h1>IMAGE 5</h1>
+                    <p>DEVELOPER <br> Lorem ipsum, dolor sitque illum beatae!</p>
+                </div>
+                <img src="images/img5.jpg" alt="img5">
+            </div>
+
+            <a class="slidePrev" onclick="plusSlide(-1)">&#10094;</a>
+            <a class="slideNext" onclick="plusSlide(1)">&#10095;</a>
+
+            <div class="dotsbox">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+                <span class="dot" onclick="currentSlide(4)"></span>
+                <span class="dot" onclick="currentSlide(5)"></span>
+            </div>
+        </div>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit sit reprehenderit quae possimus. Numquam et soluta doloribus illo, cupiditate sed quos doloremque vitae ad nostrum quis autem. Quia repellat obcaecati at. Est, minus amet excepturi voluptas, quibusdam atque voluptate deleniti facere asperiores necessitatibus vero voluptates, quisquam soluta dolores aperiam id! Autem vitae ipsum possimus laboriosam iusto qui quibusdam. Ipsum minima hic sit labore inventore nisi architecto ipsa ex sint expedita vitae commodi impedit possimus dolorem eius velit fugit nostrum repellendus, voluptatum maiores exercitationem. Maxime atque possimus iste aspernatur debitis, repudiandae accusantium necessitatibus sapiente aperiam voluptatum, consectetur et temporibus quisquam vero delectus enim cumque quaerat voluptas omnis excepturi quas placeat. Sapiente minima beatae ipsa deleniti fuga velit ea laudantium architecto saepe perferendis explicabo id atque labore temporibus quia sint, pariatur repudiandae corporis, minus voluptate voluptates dignissimos! Est placeat quis mollitia ex iusto inventore numquam tempore rem quibusdam natus optio accusamus facere minus et odio alias nisi, obcaecati, fugiat quod eaque modi distinctio. Reiciendis architecto iusto optio est doloribus temporibus at iste odit. Obcaecati eum repellendus id ipsum culpa aperiam nemo enim, ea consectetur quasi, ipsam officiis inventore optio laudantium, reiciendis necessitatibus possimus modi magnam eius incidunt! Amet asperiores vel qui reiciendis similique doloribus velit autem dolores ullam hic nobis repellat natus atque minus dolor, excepturi quae obcaecati! Tenetur nobis, incidunt, dolorem, quas quasi voluptatem assumenda a fugit suscipit quo expedita eius laborum quis. Eos, debitis. Qui, quisquam placeat minusfacilis incidunt saepe rem iusto deserunt dignissimos a fuga quaerat vero!
+        </p>
+    </main>
+
+
+
+
+
+    <!-- JS -->
+    <script src="js/script.js"></script>
 </body>
+
 </html>
