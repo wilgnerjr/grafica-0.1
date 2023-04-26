@@ -21,7 +21,7 @@ window.addEventListener('DOMContentLoaded', () => {
         }, 3500);
     };
     let horaAtual = new Date().getHours();
-    if (horaAtual >= 6 && horaAtual < 18) {
+    if (horaAtual >= 6 && horaAtual > 18) {
     }
     else {
         intro.style.backgroundColor = 'black';
@@ -156,3 +156,5 @@ function slidefun(n) {
     myslide[counter - 1].style.display ="block";
     dot[counter - 1].classList.add("activeSlide");
 }
+
+// ====================

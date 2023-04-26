@@ -17,24 +17,28 @@
 
 // ==========HTML==========
 html {
+    scroll-behavior: smooth;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size: 62.5%;
+
     ::-webkit-scrollbar {
         width: 8px;
     }
-    
+
     ::-webkit-scrollbar-track {
         background-color: #ffffff;
     }
-        
+
     ::-webkit-scrollbar-thumb {
         max-height: 10px;
-        background-color: #770000;
-        border-radius: 0px;
+        background-color: #ffffff;
+        border-radius: 5px;
+        border: 2px solid rgb(160, 160, 160);
+        margin: auto;
     }
-    
+
     ::-webkit-scrollbar-thumb:hover {
-        background-color: #a10000;
+        background-color: #700000;
 
     }
 }
@@ -215,193 +219,160 @@ body {
         }
     }
 
-    // ==========SLIDER==========
-    
-    .slider {
-        position: relative;
-        width: 100%;
-        background-color: rgb(80, 80, 80);
+    // ==========MAIN==========
+    main {
 
-        .myslider {
-            height: 100vh;
-            overflow: hidden;
-            display: none;
+        // ==========SLIDER==========
+        .slider {
+            position: relative;
+            width: 100%;
+            background-color: rgb(80, 80, 80);
 
-            .sliderTxt {
+            .myslider {
+                height: 450px;
+                overflow: hidden;
+                display: none;
+
+                .sliderTxt {
+                    position: absolute;
+                    color: white;
+                    letter-spacing: 2px;
+                    line-height: 35px;
+                    top: 40%;
+                    left: 15%;
+                    -webkit-animation-name: posi;
+                    -webkit-animation-duration: 2s;
+                    animation-name: posi;
+                    animation-duration: 2s;
+                    z-index: 1;
+
+                    h1 {
+                        color: #961616;
+                        font-weight: bold;
+                        margin-bottom: 20px;
+                    }
+
+                    p {
+                        font-weight: bold;
+                        font-size: 20px;
+                    }
+                }
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+
+            .slideNext {
+                right: 0;
+            }
+
+            .slidePrev,
+            .slideNext {
                 position: absolute;
+                top: 50%;
+                transform: translate(0, -50%);
+                font-size: 50px;
+                padding: 15px;
+                cursor: pointer;
+                transition: .1s;
                 color: white;
-                letter-spacing: 2px;
-                line-height: 35px;
-                top: 40%;
-                left: 15%;
-                -webkit-animation-name: posi;
-                -webkit-animation-duration: 2s;
-                animation-name: posi;
-                animation-duration: 2s;
-                z-index: 1;
+                user-select: none;
 
-                h1 {
+                &:hover {
                     color: #961616;
-                    font-weight: bold;
-                    margin-bottom: 20px;
+                }
+            }
+
+            .dotsbox {
+                position: absolute;
+                text-align: center;
+                left: 50%;
+                transform: translate(-50%);
+                bottom: 20px;
+                cursor: pointer;
+
+                .dot {
+                    display: inline-block;
+                    width: 15px;
+                    height: 15px;
+                    border-radius: 50%;
+                    border: 3px solid #fff;
+                    margin: 0 10px;
+                    cursor: pointer;
+                }
+
+                .activeSlide,
+                .dot:hover {
+                    border-color: #961616;
+                }
+            }
+
+            .slideFade {
+                -webkit-animation-name: fade;
+                -webkit-animation-duration: 1.5s;
+                animation-name: fade;
+                animation-duration: 1.5s;
+            }
+        }
+
+        .sobre {
+            scroll-margin-top: 70px;
+            padding: 30px 15px;
+            display: flex;
+            justify-content: center;
+            background-color: white;
+
+            .detalhesAreaSobre {
+                user-select: none;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                width: 250px;
+                margin: 10px;
+                padding: 8px;
+
+                img {
+                    width: 80px;
+                    height: 80px;
+                    border-radius: 20px;
+                }
+
+                h2 {
+                    color: white;
                 }
 
                 p {
-                    font-weight: bold;
-                    font-size: 20px;
+                    text-align: justify;
+                    font-size: 1.3rem;
                 }
-            }
 
-            img {
-                width: 100%;
-                height: 100%;
-                transform: scale(1.5, 1.5);
-                -webkit-animation-name: zoomin;
-                -webkit-animation-duration: 40s;
-                animation-name: zoomin;
-                animation-duration: 40s;
+                ul {
+                    li {
+                        font-family: monospace;
+                        // width: 100%;
+                        position: relative;
+                        left: 0%;
+                        font-size: 1.3rem;
+                        transition: all ease-in-out .5s;
+                        font-weight: bold;
 
-            }
-        }
+                        &:hover {
+                            -webkit-animation-name: posi;
+                            -webkit-animation-duration: 2s;
+                            animation-name: posi;
+                            animation-duration: 2s;
+                            border-bottom: 1px solid #961616;
+                        }
+                    }
 
-        .slideNext {
-            right: 0;
-        }
-
-        .slidePrev,
-        .slideNext {
-            position: absolute;
-            top: 50%;
-            transform: translate(0, -50%);
-            font-size: 50px;
-            padding: 15px;
-            cursor: pointer;
-            transition: .1s;
-            color: white;
-            user-select: none;
-
-            &:hover {
-                color: #961616;
-            }
-        }
-
-        .dotsbox {
-            position: absolute;
-            text-align: center;
-            left: 50%;
-            transform: translate(-50%);
-            bottom: 20px;
-            cursor: pointer;
-
-            .dot {
-                display: inline-block;
-                width: 15px;
-                height: 15px;
-                border-radius: 50%;
-                border: 3px solid #fff;
-                margin: 0 10px;
-                cursor: pointer;
-            }
-            .activeSlide , .dot:hover{
-                border-color: #961616;
-            }
-        }
-
-        .slideFade {
-            -webkit-animation-name: fade;
-            -webkit-animation-duration: 1.5s;
-            animation-name: fade;
-            animation-duration: 1.5s;
-        }
-
-        // ==========ANIMAÇÕES DO SLIDE==========
-        @-webkit-keyframes fade {
-            from {
-                opacity: 0.8;
-            }
-
-            to {
-                opacity: 1;
-            }
-        }
-
-        @keyframes fade {
-            from {
-                opacity: 0.8;
-            }
-
-            to {
-                opacity: 1;
-            }
-        }
-
-        @-webkit-keyframes posi {
-            from {
-                left: 25%;
-            }
-
-            to {
-                left: 15%;
-            }
-        }
-
-        @keyframes posi {
-            from {
-                left: 25%;
-            }
-
-            to {
-                left: 15%;
-            }
-        }
-
-        @-webkit-keyframes zoomin {
-            from {
-                transform: scale(1, 1);
-            }
-
-            to {
-                transform: scale(1.5, 1.5);
-            }
-        }
-
-        @keyframes zoomin {
-            from {
-                transform: scale(1, 1);
-            }
-
-            to {
-                transform: scale(1.5, 1.5);
+                }
             }
         }
     }
 
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -472,6 +443,7 @@ body {
     body {
         background-color: aqua;
 
+        // ==========MAIN==========
         .intro {
             img {
                 width: 290px;
@@ -489,6 +461,7 @@ body {
             }
         }
 
+        // ==========MAIN==========
         header {
             .navbar {
                 .nav-logo {
@@ -540,115 +513,141 @@ body {
             }
         }
 
-        .slider {
-            position: relative;
-            width: 100%;
-            background-color: rgb(80, 80, 80);
+        // ==========MAIN==========
+        main {
 
-            .myslider {
-                height: 500px;
+            // ==========SLIDER==========
+            .slider {
+                position: relative;
+                width: 100%;
+                background-color: rgb(80, 80, 80);
 
-                .sliderTxt {
-                    line-height: 25px;
-                    top: 50%;
-                    left: 50%;
-                    transform: translate(-50%, -50%);
-                    -webkit-animation-name: posi2;
-                    -webkit-animation-duration: 2s;
-                    animation-name: posi2;
-                    animation-duration: 2s;
+                .myslider {
+                    height: 500px;
 
-                    h1 {
-                        font-size: 40px;
+                    .sliderTxt {
+                        line-height: 25px;
+                        top: 50%;
+                        left: 50%;
+                        transform: translate(-50%, -50%);
+                        -webkit-animation-name: posi2;
+                        -webkit-animation-duration: 2s;
+                        animation-name: posi2;
+                        animation-duration: 2s;
+
+                        h1 {
+                            font-size: 40px;
+                        }
+
+                        p {
+                            font-size: 13px;
+                        }
                     }
 
-                    p {
-                        font-size: 13px;
+                    img {
+                        width: 100%;
+                        height: 100%;
+                        transform: scale(1.5, 1.5);
+                        -webkit-animation-name: zoomin;
+                        -webkit-animation-duration: 40s;
+                        animation-name: zoomin;
+                        animation-duration: 40s;
+
                     }
                 }
 
-                img {
-                    width: 100%;
-                    height: 100%;
-                    transform: scale(1.5, 1.5);
-                    -webkit-animation-name: zoomin;
-                    -webkit-animation-duration: 40s;
-                    animation-name: zoomin;
-                    animation-duration: 40s;
+                // ==========ANIMAÇÕES DO SLIDE==========
 
+                @-webkit-keyframes fade {
+                    from {
+                        opacity: 0.8;
+                    }
+
+                    to {
+                        opacity: 1;
+                    }
+                }
+
+                @keyframes fade {
+                    from {
+                        opacity: 0.8;
+                    }
+
+                    to {
+                        opacity: 1;
+                    }
+                }
+
+                @-webkit-keyframes posi2 {
+                    from {
+                        left: 35%;
+                    }
+
+                    to {
+                        left: 50%;
+                    }
+                }
+
+                @keyframes posi2 {
+                    from {
+                        left: 35%;
+                    }
+
+                    to {
+                        left: 50%;
+                    }
+                }
+
+                @-webkit-keyframes zoomin {
+                    from {
+                        transform: scale(1, 1);
+                    }
+
+                    to {
+                        transform: scale(1.5, 1.5);
+                    }
+                }
+
+                @keyframes zoomin {
+                    from {
+                        transform: scale(1, 1);
+                    }
+
+                    to {
+                        transform: scale(1.5, 1.5);
+                    }
                 }
             }
 
-            // ==========ANIMAÇÕES DO SLIDE==========
-
-            @-webkit-keyframes fade {
-                from {
-                    opacity: 0.8;
+            // ==========SOBRE==========
+            .sobre {
+                .detalhesAreaSobre {
+                    width: 150px;
+                    margin: 5px;
+                    padding: 0px;
                 }
-
-                to {
-                    opacity: 1;
+                .missao{
+                    width: 40%;
                 }
-            }
-
-            @keyframes fade {
-                from {
-                    opacity: 0.8;
+                .visao{
+                    width: 40%;
                 }
-
-                to {
-                    opacity: 1;
-                }
-            }
-
-            @-webkit-keyframes posi2 {
-                from {
-                    left: 35%;
-                }
-
-                to {
-                    left: 50%;
-                }
-            }
-
-            @keyframes posi2 {
-                from {
-                    left: 35%;
-                }
-
-                to {
-                    left: 50%;
-                }
-            }
-
-            @-webkit-keyframes zoomin {
-                from {
-                    transform: scale(1, 1);
-                }
-
-                to {
-                    transform: scale(1.5, 1.5);
-                }
-            }
-
-            @keyframes zoomin {
-                from {
-                    transform: scale(1, 1);
-                }
-
-                to {
-                    transform: scale(1.5, 1.5);
+                .valores{
+                    width: 20%;
                 }
             }
         }
     }
 }
 
+
+
 /* Estilos para celulares com largura máxima de 520px */
 @media (max-width: 520px) {
     body {
         background-color: black;
 
+        // ==========HEADER==========
         header {
             .navbar {
                 .nav-logo {
@@ -700,31 +699,120 @@ body {
             }
         }
 
-        .slider {
-            .myslider {
-                height: 400px;
+        // ==========MAIN==========
+        main {
 
-                .sliderTxt {
-                    h1 {
-                        font-size: 30px;
+            // ==========SLIDER==========
+            .slider {
+                .myslider {
+                    height: 400px;
+
+                    .sliderTxt {
+                        h1 {
+                            font-size: 30px;
+                        }
+                    }
+                }
+
+                .dotsbox {
+                    .dot {
+                        margin: 0 4px;
+                    }
+                }
+
+                .slidePrev,
+                .slideNext {
+                    position: absolute;
+                    top: calc(70px + 50%);
+                    transform: translate(0, -100%);
+                    font-size: 30px;
+                    padding: 15px;
+                }
+            }
+
+            // ==========SOBRE==========
+            .sobre {
+                align-items: center;
+                justify-content: center;
+                flex-wrap: wrap;
+
+                .detalhesAreaSobre {
+                    ul {
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        flex-wrap: wrap;
+                        gap: 2rem;
+
+                        li {
+                            left: 0;
+
+                            &:hover {
+                                -webkit-animation-name: posi;
+                                -webkit-animation-duration: 0s;
+                                animation-name: posi;
+                                animation-duration: 0s;
+                            }
+                        }
                     }
                 }
             }
-
-            .dotsbox {
-                .dot {
-                    margin: 0 4px;
-                }
-            }
-
-            .slidePrev,
-            .slideNext {
-                position: absolute;
-                top: calc(70px + 50%);
-                transform: translate(0, -100%);
-                font-size: 30px;
-                padding: 15px;
-            }
         }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// ==========ANIMAÇÕES==========
+@-webkit-keyframes fade {
+    from {
+        opacity: 0.8;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fade {
+    from {
+        opacity: 0.8;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes posi {
+    from {
+        left: 0%;
+    }
+
+    to {
+        left: 15%;
+    }
+}
+
+@keyframes posi {
+    from {
+        left: 0%;
+    }
+
+    to {
+        left: 15%;
     }
 }
