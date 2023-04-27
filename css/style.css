@@ -34,7 +34,7 @@ body {
   width: 100%;
   height: 100vh;
   scroll-behavior: smooth;
-  background-color: rgb(0, 0, 92);
+  background-color: rgb(167, 167, 167);
 }
 body .intro {
   position: fixed;
@@ -309,6 +309,54 @@ body main .sobre .detalhesAreaSobre ul li:hover {
   animation-name: posi;
   animation-duration: 2s;
   border-bottom: 1px solid #961616;
+}
+body main .servicos {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: rgb(10, 196, 3);
+  scroll-margin-top: 70px;
+  padding: 15px;
+}
+body main .servicos h1 {
+  margin: 15px;
+  font-family: "Stick No Bills", sans-serif;
+  letter-spacing: 2px;
+  color: #961616;
+  font-size: 3rem;
+}
+body main .servicos .portifolioProdutos {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  grid-gap: 10px;
+  background-color: aqua;
+}
+body main .servicos .portifolioProdutos .produto {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: 0.2s ease-in-out;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  cursor: pointer;
+  border: 1px solid rgba(150, 22, 22, 0);
+  border-radius: 5px;
+}
+body main .servicos .portifolioProdutos .produto:hover {
+  transform: scale(0.9);
+  border: 1px solid #961616;
+}
+body main .servicos .portifolioProdutos .produto img {
+  width: 110px;
+}
+body main .servicos .portifolioProdutos .produto label {
+  font-weight: bold;
+  font-family: "Stick No Bills", sans-serif;
+  font-size: 1.2rem;
 }
 
 /* Estilos para tablets com largura mínima de 521px e máxima de 800px */
