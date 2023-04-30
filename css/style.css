@@ -267,12 +267,25 @@ body main .slider .slideFade {
 }
 body main .sobre {
   scroll-margin-top: 70px;
-  padding: 30px 15px;
+  padding: 10px 15px;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   background-color: white;
 }
-body main .sobre .detalhesAreaSobre {
+body main .sobre h1 {
+  text-align: center;
+  margin: 0;
+  font-family: "Stick No Bills", sans-serif;
+  letter-spacing: 2px;
+  color: #961616;
+  font-size: 3rem;
+}
+body main .sobre div {
+  display: flex;
+  justify-content: center;
+}
+body main .sobre div .detalhesAreaSobre {
   -webkit-user-select: none;
      -moz-user-select: none;
           user-select: none;
@@ -283,19 +296,19 @@ body main .sobre .detalhesAreaSobre {
   margin: 10px;
   padding: 8px;
 }
-body main .sobre .detalhesAreaSobre img {
+body main .sobre div .detalhesAreaSobre img {
   width: 80px;
   height: 80px;
   border-radius: 20px;
 }
-body main .sobre .detalhesAreaSobre h2 {
+body main .sobre div .detalhesAreaSobre h2 {
   color: white;
 }
-body main .sobre .detalhesAreaSobre p {
+body main .sobre div .detalhesAreaSobre p {
   text-align: justify;
   font-size: 1.3rem;
 }
-body main .sobre .detalhesAreaSobre ul li {
+body main .sobre div .detalhesAreaSobre ul li {
   font-family: monospace;
   position: relative;
   left: 0%;
@@ -303,7 +316,7 @@ body main .sobre .detalhesAreaSobre ul li {
   transition: all ease-in-out 0.5s;
   font-weight: bold;
 }
-body main .sobre .detalhesAreaSobre ul li:hover {
+body main .sobre div .detalhesAreaSobre ul li:hover {
   -webkit-animation-name: posi;
   -webkit-animation-duration: 2s;
   animation-name: posi;
@@ -315,8 +328,7 @@ body main .servicos {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  background-color: rgb(10, 196, 3);
-  scroll-margin-top: 70px;
+  scroll-margin-top: 50px;
   padding: 15px;
 }
 body main .servicos h1 {
@@ -325,39 +337,193 @@ body main .servicos h1 {
   letter-spacing: 2px;
   color: #961616;
   font-size: 3rem;
-  border-bottom: 2px solid #961616;
 }
 body main .servicos .portifolioProdutos {
-  display: grid;
-  grid-template-columns: repeat(6, 1fr);
-  grid-template-rows: repeat(4, 1fr);
-  grid-gap: 10px;
-  background-color: aqua;
-}
-body main .servicos .portifolioProdutos .produto {
+  border-radius: 15px;
+  max-width: 800px;
+  margin: 20px auto;
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 20px;
   align-items: center;
   justify-content: center;
-  transition: 0.2s ease-in-out;
-  -webkit-user-select: none;
-     -moz-user-select: none;
-          user-select: none;
-  cursor: pointer;
-  border: 1px solid rgba(150, 22, 22, 0);
+  padding: 10px;
+  background-color: #fff;
+  border: 2px solid #961616;
+}
+body main .servicos .portifolioProdutos .produto {
+  outline: none;
+  width: 100px;
+  height: 100px;
+  border-radius: 8px;
+  background-color: transparent;
+  color: rgb(172, 0, 0);
+  display: flex;
+  flex-direction: column;
   border-radius: 5px;
+  background-color: rgb(255, 255, 255);
+  cursor: pointer;
+  transition: 0.1s ease-in-out;
 }
 body main .servicos .portifolioProdutos .produto:hover {
   transform: scale(0.9);
   border: 1px solid #961616;
 }
-body main .servicos .portifolioProdutos .produto img {
-  width: 110px;
-}
 body main .servicos .portifolioProdutos .produto label {
+  font-size: small;
+  text-align: center;
   font-weight: bold;
-  font-family: "Stick No Bills", sans-serif;
-  font-size: 1.2rem;
+  color: rgb(0, 0, 0);
+  padding: 1px;
+  cursor: pointer;
+}
+body main .servicos .portifolioProdutos .produto div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+body main .servicos .portifolioProdutos .produto .produto1 {
+  background-image: url("https://wilgnerjr.github.io/imagens/imgOtimizada/adesivo.png");
+}
+body main .servicos .portifolioProdutos .produto .produto2 {
+  background-image: url("https://wilgnerjr.github.io/imagens/imgOtimizada/banner.webp");
+}
+body main .servicos .portifolioProdutos .produto .produto3 {
+  background-image: url("https://wilgnerjr.github.io/imagens/imgOtimizada/blocoDeComanda.webp");
+}
+body main .servicos .portifolioProdutos .produto .produto4 {
+  background-image: url("https://wilgnerjr.github.io/imagens/imgOtimizada/caixaPersonalizada.png");
+}
+body main .servicos .portifolioProdutos .produto .produto5 {
+  background-image: url("https://wilgnerjr.github.io/imagens/imgOtimizada/calendario.png");
+}
+body main .servicos .portifolioProdutos .produto .produto6 {
+  background-image: url("https://wilgnerjr.github.io/imagens/imgOtimizada/camisa.png");
+}
+body main .servicos .portifolioProdutos .produto .produto7 {
+  background-image: url("https://wilgnerjr.github.io/imagens/imgOtimizada/cardapio.png");
+}
+body main .servicos .portifolioProdutos .produto .produto8 {
+  background-image: url("https://wilgnerjr.github.io/imagens/imgOtimizada/carimbo.png");
+}
+body main .servicos .portifolioProdutos .produto .produto9 {
+  background-image: url("https://wilgnerjr.github.io/imagens/imgOtimizada/cartaoDeVisita.png");
+}
+body main .servicos .portifolioProdutos .produto .produto10 {
+  background-image: url("https://wilgnerjr.github.io/imagens/imgOtimizada/chaveiro.png");
+}
+body main .servicos .portifolioProdutos .produto .produto11 {
+  background-image: url("https://wilgnerjr.github.io/imagens/imgOtimizada/convite-thaeme.png");
+}
+body main .servicos .portifolioProdutos .produto .produto12 {
+  background-image: url("https://wilgnerjr.github.io/imagens/imgOtimizada/copia.png");
+}
+body main .servicos .portifolioProdutos .produto .produto13 {
+  background-image: url("https://wilgnerjr.github.io/imagens/imgOtimizada/caneca.png");
+}
+body main .servicos .portifolioProdutos .produto .produto14 {
+  background-image: url("https://wilgnerjr.github.io/imagens/imgOtimizada/cracha.webp");
+}
+body main .servicos .portifolioProdutos .produto .produto15 {
+  background-image: url("https://wilgnerjr.github.io/imagens/imgOtimizada/credencial.png");
+}
+body main .servicos .portifolioProdutos .produto .produto16 {
+  background-image: url("https://wilgnerjr.github.io/imagens/imgOtimizada/display.png");
+}
+body main .servicos .portifolioProdutos .produto .produto17 {
+  background-image: url("https://wilgnerjr.github.io/imagens/imgOtimizada/encadernacao.webp");
+}
+body main .servicos .portifolioProdutos .produto .produto18 {
+  background-image: url("https://wilgnerjr.github.io/imagens/imgOtimizada/ficha.png");
+}
+body main .servicos .portifolioProdutos .produto .produto19 {
+  background-image: url("https://wilgnerjr.github.io/imagens/imgOtimizada/folder.png");
+}
+body main .servicos .portifolioProdutos .produto .produto20 {
+  background-image: url("https://wilgnerjr.github.io/imagens/imgOtimizada/impressora3D.webp");
+}
+body main .servicos .portifolioProdutos .produto .produto21 {
+  background-image: url("https://wilgnerjr.github.io/imagens/imgOtimizada/pasta.png");
+}
+body main .servicos .portifolioProdutos .produto .produto22 {
+  background-image: url("https://wilgnerjr.github.io/imagens/imgOtimizada/plastificacao.png");
+}
+body main .servicos .portifolioProdutos .produto .produto23 {
+  background-image: url("https://wilgnerjr.github.io/imagens/imgOtimizada/plotter.jpg");
+}
+body main .servicos .portifolioProdutos .produto .produto24 {
+  background-image: url("https://wilgnerjr.github.io/imagens/imgOtimizada/scanner.jpg");
+}
+body main .servicos .modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+body main .servicos .modal .modal-content {
+  background-color: #fefefe;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+}
+body main .servicos .modal .modal-content .close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+body main .servicos .modal .modal-content .close:hover {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+body main .servicos .modal .modal-content .close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+body main .servicos .modal .modal-content .conteudoModal {
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+body main .servicos .modal .modal-content .conteudoModal .areaImg {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+body main .servicos .modal .modal-content .conteudoModal .areaImg h1 {
+  text-align: center;
+}
+body main .servicos .modal .modal-content .conteudoModal .areaImg .img {
+  width: 200px;
+  height: 200px;
+  border-radius: 10px;
+  border: 1px solid red;
+  background-image: url("//images/img1.jpg");
+  margin: 0 auto;
+  text-align: center;
+}
+body main .servicos .modal .modal-content .conteudoModal .areaDetalhes {
+  width: 90%;
+  height: 100%;
+  background-color: rgb(248, 248, 255);
+}
+body main .servicos .modal .modal-content .conteudoModal .areaDetalhes .detalhes p {
+  text-align: left;
+  color: #961616;
+  font-size: 1.5rem;
+  font-weight: bold;
 }
 
 /* Estilos para tablets com largura mínima de 521px e máxima de 800px */
