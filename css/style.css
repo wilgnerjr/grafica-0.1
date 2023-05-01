@@ -135,6 +135,7 @@ body header .navbar .nav-logo {
   font-weight: bold;
 }
 body header .navbar .nav-menu {
+  overflow: auto;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -285,12 +286,12 @@ body main .sobre h1 {
   color: #961616;
   font-size: 3rem;
 }
-body main .sobre div {
+body main .sobre .conteudoSobre {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
 }
-body main .sobre div .detalhesAreaSobre {
+body main .sobre .conteudoSobre .detalhesAreaSobre {
   -webkit-user-select: none;
      -moz-user-select: none;
           user-select: none;
@@ -301,19 +302,20 @@ body main .sobre div .detalhesAreaSobre {
   margin: 10px;
   padding: 8px;
 }
-body main .sobre div .detalhesAreaSobre img {
+body main .sobre .conteudoSobre .detalhesAreaSobre img {
   width: 80px;
   height: 80px;
   border-radius: 20px;
 }
-body main .sobre div .detalhesAreaSobre h2 {
-  color: white;
+body main .sobre .conteudoSobre .detalhesAreaSobre h2 {
+  text-align: center;
+  color: rgb(0, 104, 104);
 }
-body main .sobre div .detalhesAreaSobre p {
+body main .sobre .conteudoSobre .detalhesAreaSobre p {
   text-align: justify;
   font-size: 1.3rem;
 }
-body main .sobre div .detalhesAreaSobre ul li {
+body main .sobre .conteudoSobre .detalhesAreaSobre ul li {
   font-family: monospace;
   position: relative;
   left: 0%;
@@ -321,7 +323,7 @@ body main .sobre div .detalhesAreaSobre ul li {
   transition: all ease-in-out 0.5s;
   font-weight: bold;
 }
-body main .sobre div .detalhesAreaSobre ul li:hover {
+body main .sobre .conteudoSobre .detalhesAreaSobre ul li:hover {
   -webkit-animation-name: posi;
   -webkit-animation-duration: 2s;
   animation-name: posi;
@@ -489,7 +491,7 @@ body main .servicos .modal {
 }
 body main .servicos .modal .modal-content {
   position: relative;
-  background-color: #fefefe;
+  background-color: #ffffff;
   margin: 15% auto;
   padding: 20px;
   border: 1px solid #888;
@@ -575,6 +577,9 @@ body main .servicos .modal .modal-content .conteudoModal .areaDetalhes .detalhes
     margin-top: 10px;
     font-size: 2.8rem;
   }
+  body header .navbar {
+    overflow: auto;
+  }
   body header .navbar .nav-logo {
     margin: 0 auto;
   }
@@ -587,17 +592,26 @@ body main .servicos .modal .modal-content .conteudoModal .areaDetalhes .detalhes
     top: 70px;
     gap: 0;
     flex-direction: column;
-    background-color: #ffffff;
+    background-color: #f5f5f5;
     width: 100%;
-    height: 100vh;
+    height: 100%;
     text-align: center;
     transition: 0.3s;
+    overflow: auto;
+    padding: 50px 0;
   }
   body header .navbar .nav-menu .nav-item {
     width: 80%;
     padding: 5px;
-    margin: 30px 0 0 0;
+    margin: 0px 0 0 0;
     border-bottom: 2px solid #961616;
+  }
+  body header .navbar .nav-menu .nav-item .nav-link {
+    width: 100%;
+    height: 100%;
+  }
+  body header .navbar .nav-menu .nav-item .nav-link:hover {
+    border: none;
   }
   body header .navbar .nav-menu.activeMenu {
     left: 0;
@@ -686,11 +700,12 @@ body main .servicos .modal .modal-content .conteudoModal .areaDetalhes .detalhes
     width: 20%;
   }
   body main .servicos .modal {
+    overflow: auto;
     width: 100%;
     height: 100vh;
-    overflow: hidden;
   }
   body main .servicos .modal .modal-content {
+    overflow: auto;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -730,6 +745,13 @@ body main .servicos .modal .modal-content .conteudoModal .areaDetalhes .detalhes
     margin: 30px 0 0 0;
     border-bottom: 2px solid #961616;
   }
+  body header .navbar .nav-menu .nav-item .nav-link {
+    width: 100%;
+    height: 100%;
+  }
+  body header .navbar .nav-menu .nav-item .nav-link:hover {
+    border: none;
+  }
   body header .navbar .nav-menu.activeMenu {
     left: 0;
   }
@@ -767,34 +789,39 @@ body main .servicos .modal .modal-content .conteudoModal .areaDetalhes .detalhes
     justify-content: center;
     flex-wrap: wrap;
   }
-  body main .sobre .detalhesAreaSobre ul {
+  body main .sobre .conteudoSobre .detalhesAreaSobre ul {
     display: flex;
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
     gap: 2rem;
   }
-  body main .sobre .detalhesAreaSobre ul li {
+  body main .sobre .conteudoSobre .detalhesAreaSobre ul li {
     left: 0;
   }
-  body main .sobre .detalhesAreaSobre ul li:hover {
+  body main .sobre .conteudoSobre .detalhesAreaSobre ul li:hover {
     -webkit-animation-name: posi;
     -webkit-animation-duration: 0s;
     animation-name: posi;
     animation-duration: 0s;
   }
+  body main .servicos .portifolioProdutos {
+    background-color: transparent;
+    border: none;
+  }
   body main .servicos .modal {
-    width: 100%;
-    height: 100vh;
+    overflow: auto;
   }
   body main .servicos .modal .modal-content {
-    width: 100vw;
-    height: 80vh;
+    overflow: auto;
+    width: 95%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     padding: 2px;
+    top: 70px;
+    border: 2px solid #700000;
   }
   body main .servicos .modal .modal-content .conteudoModal {
     display: flex;
@@ -802,15 +829,24 @@ body main .servicos .modal .modal-content .conteudoModal .areaDetalhes .detalhes
     align-items: center;
     text-align: center;
     justify-content: center;
+    padding: 5px;
+  }
+  body main .servicos .modal .modal-content .conteudoModal .areaImg h1 {
+    padding: 0;
+    margin: 5px;
   }
   body main .servicos .modal .modal-content .conteudoModal .areaImg .img {
     width: 100px;
     height: 100px;
   }
   body main .servicos .modal .modal-content .conteudoModal .areaDetalhes {
-    height: 100%;
+    height: auto;
     margin: 0;
     padding: 0;
+  }
+  body main .servicos .modal .modal-content .conteudoModal .areaDetalhes h1 {
+    padding: 0px;
+    margin: 3px 0px;
   }
   body main .servicos .modal .modal-content .conteudoModal .areaDetalhes .detalhes {
     height: 100%;

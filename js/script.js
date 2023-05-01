@@ -164,8 +164,6 @@ var modal = document.querySelector(".modal");
 var closeBtn = document.querySelector(".close");
 var modalTitleImgImg = document.getElementById("modalTitleImg");
 var conteudoDetalhes = document.getElementById("conteudoDetalhes");
-// var modalTitleImgDetalhes = document.getElementById("modalTitleDetalhes");
-
 var produto1 = document.getElementById("produto1");
 var produto2 = document.getElementById("produto2");
 var produto3 = document.getElementById("produto3");
@@ -411,6 +409,7 @@ produto24.onclick = function () {
 }
 
 closeBtn.onclick = function () {
+    body.style.overflow = "auto";
     modal.style.display = "none";
 }
 
@@ -422,11 +421,4 @@ window.onclick = function (event) {
         modal.style.display = "none";
         conteudoDetalhes.textContent = "";
     }
-}
-function teste() {
-    body.style.width = "100%";
-    body.style.height = "100vh";
-    body.style.overflow = "auto";
-    modal.style.display = "none";
-    conteudoDetalhes.textContent = "";
 }
