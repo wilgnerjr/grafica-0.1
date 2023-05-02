@@ -162,10 +162,8 @@ function slidefun(n) {
 // ==========MODAL==========
 var modal = document.querySelector(".modal");
 var closeBtn = document.querySelector(".close");
-var modalTitleImgImg = document.getElementById("modalTitleImg");
+var modalTitleImg = document.getElementById("modalTitleImg");
 var conteudoDetalhes = document.getElementById("conteudoDetalhes");
-var imgModal = document.getElementById('imgModal');
-
 
 var produto1 = document.getElementById("produto1");
 var produto2 = document.getElementById("produto2");
@@ -198,7 +196,6 @@ produto1.onclick = function () {
     modalTitleImg.textContent = "ADESIVO";
     conteudoDetalhes.textContent = "Com os adesivos de papel personalizados, você tem a liberdade de criar designs únicos que refletem sua personalidade e estilo.Além de serem acessíveis, eles são duráveis e resistentes às intempéries, ideais para uso interno.Você também pode usá - los para divulgar sua marca ou mensagem, aplicando - os em embalagens, cadernos, agendas e muito mais.Seja criativo e adicione um toque pessoal aos seus pertences com adesivos personalizados de papel!";
 
-    imgModal.classList.add('produto1');
 
     body.style.width = "100%";
     body.style.height = "100%";
@@ -427,6 +424,5 @@ window.onclick = function (event) {
         body.style.overflow = "auto";
         modal.style.display = "none";
         conteudoDetalhes.textContent = "";
-
     }
 }

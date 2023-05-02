@@ -1,26 +1,17 @@
-// Define a lista de classes que você deseja utilizar
-var listaClasses = ["produto1", "produto2", "produto3"];
+const div = document.getElementById('imgModal');
+const imagens = ["https://www.crtcom.com.br/uploads/produtos/adesivo-vinil-brilho-avery-recorte-eletronico-recorte-eletronico-4x0-162013483945660760460914bb7ba2e5.png","https://www.bemcolar.com/media/catalog/product/cache/1/image/9df78eab33525d08d6e5fb8d27136e95/a/d/adesivo-de-parede-skate-boarding.png","https://www.graficadesignbrasil.com.br/uploads/produtos/adesivo-5x5cm-couche-80g-redondo-4x0-colorido-so-frente-160673406311278988225fc4d0ef1e847.png"]; // lista de imagens
+let i = 0; // índice da imagem atual
+let intervalId = setInterval(trocarImagem, 1000); // armazena o ID retornado por setInterval
 
-// Define o intervalo de tempo em milissegundos
-var intervalo = 1000;
-
-// Seleciona a div que você deseja alterar a classe
-var minhaDiv = document.getElementById("imgModal");
-
-// Inicia um contador para saber qual classe da lista deve ser utilizada
-var i = 0;
-
-// Define uma função que será chamada a cada intervalo de tempo
-function alterarClasse() {
-  // Remove a classe atual da div
-  minhaDiv.classList.remove(listaClasses[i]);
-
-  // Seleciona a próxima classe da lista
-  i = (i + 1) % listaClasses.length;
-
-  // Adiciona a nova classe à div
-  minhaDiv.classList.add(listaClasses[i]);
+function trocarImagem() {
+  div.style.backgroundImage = `url(${imagens[i]})`; // atualiza o fundo da div
+  i = (i + 1) % imagens.length; // incrementa o índice e garante o looping infinito
 }
 
-// Inicia o intervalo de tempo para chamar a função de alteração de classe
-setInterval(alterarClasse, intervalo);
+function pararTrocaImagem() {
+  clearInterval(intervalId); // para a execução da função
+}
+
+// Exemplo de uso:
+// Para parar a execução da função depois de 10 segundos
+// setTimeout(pararTrocaImagem, 1000);
