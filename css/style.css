@@ -530,7 +530,7 @@ body main .servicos .modal .modal-content .conteudoModal .areaImg h1 {
   text-align: center;
   border: none;
 }
-body main .servicos .modal .modal-content .conteudoModal .areaImg .img {
+body main .servicos .modal .modal-content .conteudoModal .areaImg .imgmodal {
   width: 200px;
   height: 200px;
   border-radius: 10px;

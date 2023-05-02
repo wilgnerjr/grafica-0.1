@@ -164,6 +164,7 @@ var modal = document.querySelector(".modal");
 var closeBtn = document.querySelector(".close");
 var modalTitleImg = document.getElementById("modalTitleImg");
 var conteudoDetalhes = document.getElementById("conteudoDetalhes");
+var imgModal = document.getElementById('imgModal');
 
 var produto1 = document.getElementById("produto1");
 var produto2 = document.getElementById("produto2");
@@ -196,7 +197,7 @@ produto1.onclick = function () {
     modalTitleImg.textContent = "ADESIVO";
     conteudoDetalhes.textContent = "Com os adesivos de papel personalizados, você tem a liberdade de criar designs únicos que refletem sua personalidade e estilo.Além de serem acessíveis, eles são duráveis e resistentes às intempéries, ideais para uso interno.Você também pode usá - los para divulgar sua marca ou mensagem, aplicando - os em embalagens, cadernos, agendas e muito mais.Seja criativo e adicione um toque pessoal aos seus pertences com adesivos personalizados de papel!";
 
-
+    imgModal.style.backgroundImage = "url('https://wilgnerjr.github.io/imagens/imgOtimizada/adesivo.png')";
     body.style.width = "100%";
     body.style.height = "100%";
     body.style.overflow = "hidden";
@@ -207,6 +208,7 @@ produto2.onclick = function () {
     modalTitleImg.textContent = "BANNER";
     conteudoDetalhes.textContent = "Com os adesivos de papel personalizados, você tem a liberdade de criar designs únicos que refletem sua personalidade e estilo.Além de serem acessíveis, eles são duráveis e resistentes às intempéries, ideais para uso interno.Você também pode usá - los para divulgar sua marca ou mensagem, aplicando - os em embalagens, cadernos, agendas e muito mais.Seja criativo e adicione um toque pessoal aos seus pertences com adesivos personalizados de papel!";
 
+    imgModal.style.backgroundImage = "url('https://wilgnerjr.github.io/imagens/imgOtimizada/banner.webp')";
     body.style.width = "100%";
     body.style.height = "100%";
     body.style.overflow = "hidden";
@@ -216,6 +218,7 @@ produto3.onclick = function () {
     modalTitleImg.textContent = "BLOCOS DE COMANDA";
     conteudoDetalhes.textContent = "Com os blocos de comandas, você tem a praticidade de ter tudo organizado em um só lugar. Seja para uso em restaurantes, bares, cafés ou eventos, os blocos de comandas ajudam a garantir a eficiência do serviço e a satisfação dos clientes. Além disso, eles são duráveis e resistentes, com uma variedade de opções de tamanho e formato para se adaptar às suas necessidades. Simplifique sua vida e melhore a experiência dos seus clientes com os blocos de comandas!";
 
+    imgModal.style.backgroundImage = "url('https://wilgnerjr.github.io/imagens/imgOtimizada/blocoDeComanda.webp')";
     body.style.width = "100%";
     body.style.height = "100%";
     body.style.overflow = "hidden";
@@ -225,6 +228,7 @@ produto4.onclick = function () {
     modalTitleImg.textContent = "CAIXA PERSONALIZADA";
     conteudoDetalhes.textContent = "Personalize seus presentes com caixas personalizadas! Surpreenda seus amigos e familiares com caixas únicas e exclusivas que refletem sua personalidade e estilo. Escolha entre uma variedade de tamanhos, formatos, cores e designs para criar a caixa perfeita para seu presente.";
 
+    imgModal.style.backgroundImage = "url('https://wilgnerjr.github.io/imagens/imgOtimizada/blocoDeComanda.webp')";
     body.style.width = "100%";
     body.style.height = "100%";
     body.style.overflow = "hidden";
