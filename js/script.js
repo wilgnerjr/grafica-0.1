@@ -164,6 +164,9 @@ var modal = document.querySelector(".modal");
 var closeBtn = document.querySelector(".close");
 var modalTitleImgImg = document.getElementById("modalTitleImg");
 var conteudoDetalhes = document.getElementById("conteudoDetalhes");
+var imgModal = document.getElementById('imgModal');
+
+
 var produto1 = document.getElementById("produto1");
 var produto2 = document.getElementById("produto2");
 var produto3 = document.getElementById("produto3");
@@ -195,14 +198,17 @@ produto1.onclick = function () {
     modalTitleImg.textContent = "ADESIVO";
     conteudoDetalhes.textContent = "Com os adesivos de papel personalizados, você tem a liberdade de criar designs únicos que refletem sua personalidade e estilo.Além de serem acessíveis, eles são duráveis e resistentes às intempéries, ideais para uso interno.Você também pode usá - los para divulgar sua marca ou mensagem, aplicando - os em embalagens, cadernos, agendas e muito mais.Seja criativo e adicione um toque pessoal aos seus pertences com adesivos personalizados de papel!";
 
+    imgModal.classList.add('produto1');
+
     body.style.width = "100%";
     body.style.height = "100%";
     body.style.overflow = "hidden";
     modal.style.display = "block";
 }
+
 produto2.onclick = function () {
     modalTitleImg.textContent = "BANNER";
-    conteudoDetalhes.textContent = "O banner personalizado é a solução perfeita para promover sua marca, evento ou negócio. Com a possibilidade de personalização, durabilidade e versatilidade, o banner pode ser usado em uma variedade de eventos e locais, tanto internos como externos. Comunique informações importantes e aumente a visibilidade da sua marca com um banner personalizado. Não perca mais tempo, adquira já o seu!";
+    conteudoDetalhes.textContent = "Com os adesivos de papel personalizados, você tem a liberdade de criar designs únicos que refletem sua personalidade e estilo.Além de serem acessíveis, eles são duráveis e resistentes às intempéries, ideais para uso interno.Você também pode usá - los para divulgar sua marca ou mensagem, aplicando - os em embalagens, cadernos, agendas e muito mais.Seja criativo e adicione um toque pessoal aos seus pertences com adesivos personalizados de papel!";
 
     body.style.width = "100%";
     body.style.height = "100%";
@@ -220,7 +226,7 @@ produto3.onclick = function () {
 }
 produto4.onclick = function () {
     modalTitleImg.textContent = "CAIXA PERSONALIZADA";
-    conteudoDetalhes.textContent= "Personalize seus presentes com caixas personalizadas! Surpreenda seus amigos e familiares com caixas únicas e exclusivas que refletem sua personalidade e estilo. Escolha entre uma variedade de tamanhos, formatos, cores e designs para criar a caixa perfeita para seu presente.";
+    conteudoDetalhes.textContent = "Personalize seus presentes com caixas personalizadas! Surpreenda seus amigos e familiares com caixas únicas e exclusivas que refletem sua personalidade e estilo. Escolha entre uma variedade de tamanhos, formatos, cores e designs para criar a caixa perfeita para seu presente.";
 
     body.style.width = "100%";
     body.style.height = "100%";
@@ -229,7 +235,7 @@ produto4.onclick = function () {
 }
 produto5.onclick = function () {
     modalTitleImg.textContent = "CALENDÁRIO";
-    conteudoDetalhes.textContent= "Calendários personalizados são uma ótima maneira de organizar sua vida com estilo. Com uma variedade de opções de tamanhos e designs, você pode criar um calendário exclusivo que se adapte às suas necessidades. Use-o para planejar seus compromissos, aniversários, datas importantes e muito mais. Além disso, os calendários personalizados são uma excelente opção de presente para amigos, familiares ou colegas de trabalho. Personalize com suas fotos favoritas e deixe cada mês mais especial. Peça o seu calendário personalizado agora mesmo e comece a organizar sua vida com estilo.";
+    conteudoDetalhes.textContent = "Calendários personalizados são uma ótima maneira de organizar sua vida com estilo. Com uma variedade de opções de tamanhos e designs, você pode criar um calendário exclusivo que se adapte às suas necessidades. Use-o para planejar seus compromissos, aniversários, datas importantes e muito mais. Além disso, os calendários personalizados são uma excelente opção de presente para amigos, familiares ou colegas de trabalho. Personalize com suas fotos favoritas e deixe cada mês mais especial. Peça o seu calendário personalizado agora mesmo e comece a organizar sua vida com estilo.";
 
     body.style.width = "100%";
     body.style.height = "100%";
@@ -406,6 +412,7 @@ produto24.onclick = function () {
     body.style.height = "100%";
     body.style.overflow = "hidden";
     modal.style.display = "block";
+
 }
 
 closeBtn.onclick = function () {
@@ -420,5 +427,6 @@ window.onclick = function (event) {
         body.style.overflow = "auto";
         modal.style.display = "none";
         conteudoDetalhes.textContent = "";
+
     }
 }

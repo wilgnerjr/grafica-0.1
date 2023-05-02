@@ -634,7 +634,6 @@ body {
                                 border-radius: 10px;
                                 border: 1px solid red;
                                 background-color: #961616;
-                                background-image: url('https://wilgnerjr.github.io/imagens/imgOtimizada/adesivo.png');
                                 background-size: cover;
                                 margin: 0 auto;
                                 text-align: center;
@@ -918,8 +917,6 @@ body {
     }
 }
 
-
-
 /* Estilos para celulares com largura máxima de 520px */
 @media (max-width: 520px) {
     body {
@@ -1022,6 +1019,7 @@ body {
                 align-items: center;
                 justify-content: center;
                 flex-wrap: wrap;
+
                 .conteudoSobre {
                     .detalhesAreaSobre {
                         ul {
@@ -1116,7 +1114,6 @@ body {
         }
     }
 }
-
 
 // ==========ANIMAÇÕES==========
 @-webkit-keyframes fade {
