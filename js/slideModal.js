@@ -10,7 +10,7 @@ var lista2 = [
 
 var imagemDiv = document.getElementById("imagemDiv");
 
-function imprimirLista(lista) {
+function chamarSlideModal(lista) {
   let i = 0;
   var btn1 = document.getElementById('btn1').addEventListener('click', () => {
       clearInterval(timer);

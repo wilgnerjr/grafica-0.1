@@ -185,6 +185,9 @@ body main .slider {
   background-color: rgb(80, 80, 80);
   border-bottom: 2.5px solid #961616;
 }
+body main .slider :first-child {
+  display: block;
+}
 body main .slider .myslider {
   height: 450px;
   overflow: hidden;
@@ -521,24 +524,26 @@ body main .servicos .modal .modal-content .conteudoModal .areaImg {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
 }
 body main .servicos .modal .modal-content .conteudoModal .areaImg h1 {
   text-align: center;
   border: none;
 }
-body main .servicos .modal .modal-content .conteudoModal .areaImg img {
+body main .servicos .modal .modal-content .conteudoModal .areaImg .imgModal {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 150px;
-  width: 100%;
+  height: 200px;
+  width: 200px;
   border-radius: 10px;
   border: 1px solid red;
   background-color: #961616;
-  background-size: cover;
+  background-size: contain;
   margin: 0 auto;
   text-align: center;
   background-repeat: no-repeat;
+  transition: all ease-in-out 1s;
 }
 body main .servicos .modal .modal-content .conteudoModal .areaDetalhes {
   margin: 0 auto;

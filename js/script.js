@@ -78,8 +78,6 @@ function esconder() {
     else {
         body.style.overflow = 'auto';
     }
-
-    teste();
 }
 
 // ==========ESTADO DE FUNCIONAMENTO==========
