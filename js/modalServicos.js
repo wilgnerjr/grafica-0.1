@@ -208,7 +208,7 @@ produto14.onclick = function () {
     modalTitleImg.textContent = "CRACHÁS";
     conteudoDetalhes.textContent = "Crachás são itens essenciais para identificação e segurança em empresas, eventos e conferências. Eles são fáceis de usar, ajudam a criar um ambiente mais seguro e organizado, além de serem personalizáveis de acordo com as necessidades de cada empresa ou evento. Adquira já os seus crachás personalizados e melhore a identificação e comunicação entre os colaboradores!";
 
-    imgModal.style.backgroundImage = "url('https://wilgnerjr.github.io/imagens/imgOtimizada/cracha/cracha.webp')";
+    imgModal.style.backgroundImage = "url('https://wilgnerjr.github.io/imagens/imgOtimizada/cracha/cracha.png')";
 
     body.style.width = "100%";
     body.style.height = "100%";
@@ -369,75 +369,132 @@ var lista3 = [
     "url('https://wilgnerjr.github.io/imagens/imgOtimizada/blocoDeComanda/blocoDeComanda2.png')",
     "url('https://wilgnerjr.github.io/imagens/imgOtimizada/blocoDeComanda/blocoDeComanda3.png')"
 ];
-var lista4 =[
+var lista4 = [
     "url('https://wilgnerjr.github.io/imagens/imgOtimizada/caixaPersonalizada/caixaPersonalizada.png')",
     "url('https://wilgnerjr.github.io/imagens/imgOtimizada/caixaPersonalizada/caixaPersonalizada1.webp')",
     "url('https://wilgnerjr.github.io/imagens/imgOtimizada/caixaPersonalizada/caixaPersonalizada2.webp')",
     "url('https://wilgnerjr.github.io/imagens/imgOtimizada/caixaPersonalizada/caixaPersonalizada3.webp')"
 ];
-var lista5 =[
+var lista5 = [
     "url('https://wilgnerjr.github.io/imagens/imgOtimizada/Calendario/calendario.png')",
     "url('https://wilgnerjr.github.io/imagens/imgOtimizada/Calendario/calendario1.png')",
     "url('https://wilgnerjr.github.io/imagens/imgOtimizada/Calendario/calendario2.png')",
     "url('https://wilgnerjr.github.io/imagens/imgOtimizada/Calendario/calendario3.webp')"
 ];
-var lista6 =[
+var lista6 = [
     "url('https://wilgnerjr.github.io/imagens/imgOtimizada/Camisa/camisa.png')",
     "url('https://wilgnerjr.github.io/imagens/imgOtimizada/Camisa/camisa1.png')",
     "url('https://wilgnerjr.github.io/imagens/imgOtimizada/Camisa/camisa2.png')",
     "url('https://wilgnerjr.github.io/imagens/imgOtimizada/Camisa/camisa3.png')"
 ];
-var lista7=[
+var lista7 = [
     "url('https://wilgnerjr.github.io/imagens/imgOtimizada/Cardapio/cardapio.png')",
     "url('https://wilgnerjr.github.io/imagens/imgOtimizada/Cardapio/cardapio1.png')",
     "url('https://wilgnerjr.github.io/imagens/imgOtimizada/Cardapio/cardapio2.png')",
     "url('https://wilgnerjr.github.io/imagens/imgOtimizada/Cardapio/cardapio3.png')"
 ];
-var lista8=[
+var lista8 = [
     "url('https://wilgnerjr.github.io/imagens/imgOtimizada/carimbos/carimbo.png')",
     "url('https://wilgnerjr.github.io/imagens/imgOtimizada/carimbos/carimbo1.webp')",
     "url('https://wilgnerjr.github.io/imagens/imgOtimizada/carimbos/carimbo2.png')",
     "url('https://wilgnerjr.github.io/imagens/imgOtimizada/carimbos/carimbo3.png')"
 ];
-var lista9=[
+var lista9 = [
     "url('https://wilgnerjr.github.io/imagens/imgOtimizada/cartaoDeVisita/cartaoDeVisita.png')",
     "url('https://wilgnerjr.github.io/imagens/imgOtimizada/cartaoDeVisita/cartaoDeVisita1.png')",
     "url('https://wilgnerjr.github.io/imagens/imgOtimizada/cartaoDeVisita/cartaoDeVisita2.png')",
     "url('https://wilgnerjr.github.io/imagens/imgOtimizada/cartaoDeVisita/cartaoDeVisita3.png')"
 ];
-var lista10=[
+var lista10 = [
     "url('https://wilgnerjr.github.io/imagens/imgOtimizada/chaveiro/chaveiro.png')",
     "url('https://wilgnerjr.github.io/imagens/imgOtimizada/chaveiro/chaveiro1.webp')",
     "url('https://wilgnerjr.github.io/imagens/imgOtimizada/chaveiro/chaveiro2.webp')",
     "url('https://wilgnerjr.github.io/imagens/imgOtimizada/chaveiro/chaveiro3.jpg')"
 ];
-var lista11=[
+var lista11 = [
     "url('https://wilgnerjr.github.io/imagens/imgOtimizada/convite/convite.png')",
     "url('https://wilgnerjr.github.io/imagens/imgOtimizada/convite/convite1.png')",
     "url('https://wilgnerjr.github.io/imagens/imgOtimizada/convite/convite2.png')",
     "url('https://wilgnerjr.github.io/imagens/imgOtimizada/convite/convite3.png')"
 ];
-var lista12=[
+var lista12 = [
     "url('https://wilgnerjr.github.io/imagens/imgOtimizada/copia/copia.png')",
     "url('https://wilgnerjr.github.io/imagens/imgOtimizada/copia/copia1.jpg')",
     "url('https://wilgnerjr.github.io/imagens/imgOtimizada/copia/copia2.jpg')",
     "url('https://wilgnerjr.github.io/imagens/imgOtimizada/copia/copia3.jpg')"
 ];
-var lista13=[
+var lista13 = [
     "url('https://wilgnerjr.github.io/imagens/imgOtimizada/Caneca/caneca.png')",
     "url('https://wilgnerjr.github.io/imagens/imgOtimizada/Caneca/caneca1.png')",
     "url('https://wilgnerjr.github.io/imagens/imgOtimizada/Caneca/caneca2.webp')",
     "url('https://wilgnerjr.github.io/imagens/imgOtimizada/Caneca/caneca3.png')"
 ];
-
-
-
-
-
-
-
-
-
+var lista14 = [
+    "url('https://wilgnerjr.github.io/imagens/imgOtimizada/cracha/cracha.png')",
+    "url('https://wilgnerjr.github.io/imagens/imgOtimizada/cracha/cracha1.png')",
+    "url('https://wilgnerjr.github.io/imagens/imgOtimizada/cracha/cracha2.png')",
+    "url('https://wilgnerjr.github.io/imagens/imgOtimizada/cracha/cracha3.png')"
+];
+var lista15 = [
+    "url('https://wilgnerjr.github.io/imagens/imgOtimizada/credencial/credencial.png')",
+    "url('https://wilgnerjr.github.io/imagens/imgOtimizada/credencial/credencial1.png')",
+    "url('https://wilgnerjr.github.io/imagens/imgOtimizada/credencial/credencial2.png')",
+    "url('https://wilgnerjr.github.io/imagens/imgOtimizada/credencial/credencial3.png')"
+];
+var lista16 = [
+    "url('https://wilgnerjr.github.io/imagens/imgOtimizada/display/display.png')",
+    "url('https://wilgnerjr.github.io/imagens/imgOtimizada/display/display1.png')",
+    "url('https://wilgnerjr.github.io/imagens/imgOtimizada/display/display2.png')",
+    "url('https://wilgnerjr.github.io/imagens/imgOtimizada/display/display3.jpg')"
+];
+var lista17 = [
+    "url('https://wilgnerjr.github.io/imagens/imgOtimizada/encadernacao/encadernacao.webp')",
+    "url('https://wilgnerjr.github.io/imagens/imgOtimizada/encadernacao/encadernacao1.png')",
+    "url('https://wilgnerjr.github.io/imagens/imgOtimizada/encadernacao/encadernacao2.png')",
+    "url('https://wilgnerjr.github.io/imagens/imgOtimizada/encadernacao/encadernacao3.jpg')"
+];
+var lista18 = [
+    "url('https://wilgnerjr.github.io/imagens/imgOtimizada/ficha/ficha.png')",
+    "url('https://wilgnerjr.github.io/imagens/imgOtimizada/ficha/ficha1.png')",
+    "url('https://wilgnerjr.github.io/imagens/imgOtimizada/ficha/ficha2.png')",
+    "url('https://wilgnerjr.github.io/imagens/imgOtimizada/ficha/ficha3.png')"
+];
+var lista19 = [
+    "url('https://wilgnerjr.github.io/imagens/imgOtimizada/folder/folder.png')",
+    "url('https://wilgnerjr.github.io/imagens/imgOtimizada/folder/folder1.png')",
+    "url('https://wilgnerjr.github.io/imagens/imgOtimizada/folder/folder2.png')",
+    "url('https://wilgnerjr.github.io/imagens/imgOtimizada/folder/folder3.png')",
+];
+var lista20 = [
+    "url('https://wilgnerjr.github.io/imagens/imgOtimizada/impressora3D/impressora3D.webp')",
+    "url('https://wilgnerjr.github.io/imagens/imgOtimizada/impressora3D/impressora3D1.png')",
+    "url('https://wilgnerjr.github.io/imagens/imgOtimizada/impressora3D/impressora3D2.png')",
+    "url('https://wilgnerjr.github.io/imagens/imgOtimizada/impressora3D/impressora3D3.png')",
+];
+var lista21 = [
+    "url('https://wilgnerjr.github.io/imagens/imgOtimizada/pasta/pasta.png')",
+    "url('https://wilgnerjr.github.io/imagens/imgOtimizada/pasta/pasta1.png')",
+    "url('https://wilgnerjr.github.io/imagens/imgOtimizada/pasta/pasta2.png')",
+    "url('https://wilgnerjr.github.io/imagens/imgOtimizada/pasta/pasta3.png')",
+];
+var lista22 = [
+    "url('https://wilgnerjr.github.io/imagens/imgOtimizada/plastificacao/plastificacao.png')",
+    "url('https://wilgnerjr.github.io/imagens/imgOtimizada/plastificacao/plastificacao1.png')",
+    "url('https://wilgnerjr.github.io/imagens/imgOtimizada/plastificacao/plastificacao2.webp')",
+    "url('https://wilgnerjr.github.io/imagens/imgOtimizada/plastificacao/plastificacao3.jpg')",
+];
+var lista23 = [
+    "url('https://wilgnerjr.github.io/imagens/imgOtimizada/plotter/plotter.jpg')",
+    "url('https://wilgnerjr.github.io/imagens/imgOtimizada/plotter/plotter1.jpg')",
+    "url('https://wilgnerjr.github.io/imagens/imgOtimizada/plotter/plotter2.jpg')",
+    "url('https://wilgnerjr.github.io/imagens/imgOtimizada/plotter/plotter3.jpg')",
+];
+var lista24 = [
+    "url('https://wilgnerjr.github.io/imagens/imgOtimizada/scanner/scanner.jpg')",
+    "url('https://wilgnerjr.github.io/imagens/imgOtimizada/scanner/scanner1.png')",
+    "url('https://wilgnerjr.github.io/imagens/imgOtimizada/scanner/scanner2.jpg')",
+    "url('https://wilgnerjr.github.io/imagens/imgOtimizada/scanner/scanner3.png')"
+];
 
 
 
