@@ -562,6 +562,220 @@ body main .servicos .modal .modal-content .conteudoModal .areaDetalhes .detalhes
   font-size: 1.5rem;
   font-weight: bold;
 }
+body main .servicos #clientes {
+  background: url("https://img.freepik.com/fotos-premium/gradiente-de-tom-pastel-rosa-azul-roxo-desfocado-foto-abstrata-linhas-suaves-pantone-cor-de-fundo_49683-4059.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  min-height: 100vh;
+  padding-bottom: 20px;
+}
+body main .servicos #clientes h2 {
+  font-size: 2rem;
+  font-family: "Lily Script One", cursive;
+  color: #961616;
+  letter-spacing: 3px;
+  text-shadow: -1px -1px 0 #ffffff, 1px -1px 0 #ffffff, -1px 1px 0 #ffffff, 1px 1px 0 #ffffff;
+}
+body main .servicos #clientes .logoClientes {
+  margin: 0 auto;
+  max-width: 700px;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  height: 100%;
+  background-color: rgba(218, 0, 0, 0);
+  gap: 1px;
+}
+body main .servicos #clientes .logoClientes .cliente {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 150px;
+  height: 150px;
+  margin: 5px;
+  border: 2px solid rgb(152, 62, 255);
+  box-shadow: 0px 0px 5px 1px rgb(255, 255, 255);
+  border-radius: 50%;
+  transition: all ease 0.4s;
+}
+body main .servicos #clientes .logoClientes .cliente:hover {
+  cursor: pointer;
+  transform: scale(0.9);
+  border: 2px solid #961616;
+  box-shadow: 0px 0px 10px 1px #ffffff;
+}
+body main .servicos #clientes .logoClientes .cliente1 {
+  background: url("https://hml.aprosoja.com.br/wp-content/uploads/2022/07/logo-aprosoja-rodape.png");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: rgb(255, 255, 255);
+}
+body main .servicos #clientes .logoClientes .cliente2 {
+  background: url("https://btsenergia.com.br/wp-content/uploads/2022/09/bom-futuro-3.png");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: rgb(255, 255, 255);
+}
+body main .servicos #clientes .logoClientes .cliente3 {
+  background: url("https://static.vagas.com.br/portais-de-carreira/images/components/box_divisions/original/box-vagas-logo-amaggi?1588103090");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: rgb(255, 255, 255);
+}
+body main .servicos #clientes .logoClientes .cliente4 {
+  background: url("https://logodetimes.com/times/cuiaba/logo-cuiaba-2048.png");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: rgb(255, 255, 255);
+}
+body main .servicos #clientes .logoClientes .cliente5 {
+  background: url("https://static01.eu/ofertasy.com.br/images/store/179.png");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: rgb(255, 255, 255);
+}
+body main .servicos #clientes .logoClientes .cliente6 {
+  background: url("https://upload.wikimedia.org/wikipedia/commons/a/a9/Banco_Bradesco_logo_%28vertical%29.png");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: rgb(255, 255, 255);
+}
+body main .servicos #clientes .logoClientes .cliente7 {
+  background-image: url("https://media.licdn.com/dms/image/C4D03AQFrjWxkmfFQDg/profile-displayphoto-shrink_800_800/0/1517584155759?e=2147483647&v=beta&t=M-CjB_ccx7qDsGqz-MQay1KuaNRYvtQWRHNodmtfKzo");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+body main .servicos #clientes .logoClientes .cliente8 {
+  background: url("https://sistemafamato.org.br/wp-content/uploads/2021/11/Selos-Famato-Chapado-1024x1024.png");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+body main .servicos #clientes h3 {
+  font-family: "Stick No Bills", sans-serif;
+  text-align: center;
+  color: white;
+  font-size: 2rem;
+  margin: 25px 0px 5px 0px;
+}
+body main .servicos #clientes .avaliacoes {
+  width: 650px;
+  height: 160px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  overflow-x: scroll;
+  margin: 0 auto;
+  border: 2px solid white;
+  background-color: rgba(0, 255, 255, 0);
+  border-radius: 5px;
+}
+body main .servicos #clientes .avaliacoes .avaliacaoCliente {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  min-width: 114px;
+  height: 120px;
+  margin: 5px 5px;
+  border: 2px solid white;
+  background-color: rgba(204, 204, 204, 0);
+  border-radius: 8px;
+  color: white;
+}
+body main .servicos #clientes .avaliacoes .avaliacaoCliente1 .avaliacaoCliente1Imagem {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  margin: 0px;
+  border: 2px solid rgb(255, 255, 255);
+  background-image: url("https://wilgnerjr.github.io/portifolio-2.0/imagens/eu.webp");
+  background-size: cover;
+}
+body main .servicos #clientes .avaliacoes .avaliacaoCliente1 .estrelasCliente1 .fa-star {
+  color: gold;
+}
+body main .servicos #clientes .avaliacoes .avaliacaoCliente2 .avaliacaoCliente2Imagem {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  margin: 0px;
+  border: 2px solid rgb(255, 255, 255);
+  background-image: url("https://wilgnerjr.github.io/portifolio-2.0/imagens/eu.webp");
+  background-size: cover;
+}
+body main .servicos #clientes .avaliacoes .avaliacaoCliente2 .estrelasCliente2 .fa-star {
+  color: gold;
+}
+body main .servicos #clientes .avaliacoes .avaliacaoCliente3 .avaliacaoCliente3Imagem {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  margin: 0px;
+  border: 2px solid rgb(255, 255, 255);
+  background-image: url("https://wilgnerjr.github.io/portifolio-2.0/imagens/eu.webp");
+  background-size: cover;
+}
+body main .servicos #clientes .avaliacoes .avaliacaoCliente3 .estrelasCliente3 .fa-star {
+  color: gold;
+}
+body main .servicos #clientes .avaliacoes .avaliacaoCliente4 .avaliacaoCliente4Imagem {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  margin: 0px;
+  border: 2px solid rgb(255, 255, 255);
+  background-image: url("https://wilgnerjr.github.io/portifolio-2.0/imagens/eu.webp");
+  background-size: cover;
+}
+body main .servicos #clientes .avaliacoes .avaliacaoCliente4 .estrelasCliente4 .fa-star {
+  color: gold;
+}
+body main .servicos #clientes .avaliacoes .avaliacaoCliente5 .avaliacaoCliente5Imagem {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  margin: 0px;
+  border: 2px solid rgb(255, 255, 255);
+  background-image: url("https://wilgnerjr.github.io/portifolio-2.0/imagens/eu.webp");
+  background-size: cover;
+}
+body main .servicos #clientes .avaliacoes .avaliacaoCliente5 .estrelasCliente5 .fa-star {
+  color: gold;
+}
+body main .servicos #clientes .avaliacoes .avaliacaoCliente6 .avaliacaoCliente6Imagem {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  margin: 0px;
+  border: 2px solid rgb(255, 255, 255);
+  background-image: url("https://wilgnerjr.github.io/portifolio-2.0/imagens/eu.webp");
+  background-size: cover;
+}
+body main .servicos #clientes .avaliacoes .avaliacaoCliente6 .estrelasCliente6 .fa-star {
+  color: gold;
+}
+body main .servicos #clientes .avaliacoes .avaliacaoCliente7 .avaliacaoCliente7Imagem {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  margin: 0px;
+  border: 2px solid rgb(255, 255, 255);
+  background-image: url("https://wilgnerjr.github.io/portifolio-2.0/imagens/eu.webp");
+  background-size: cover;
+}
+body main .servicos #clientes .avaliacoes .avaliacaoCliente7 .estrelasCliente7 .fa-star {
+  color: gold;
+}
 
 /* Estilos para tablets com largura mínima de 521px e máxima de 800px */
 @media (min-width: 521px) and (max-width: 800px) {

@@ -31,8 +31,6 @@ var produto22 = document.getElementById("produto22");
 var produto23 = document.getElementById("produto23");
 var produto24 = document.getElementById("produto24");
 
-
-
 produto1.onclick = function () {
     modalTitleImg.textContent = "ADESIVO";
     conteudoDetalhes.textContent = "Com os adesivos de papel personalizados, você tem a liberdade de criar designs únicos que refletem sua personalidade e estilo.Além de serem acessíveis, eles são duráveis e resistentes às intempéries, ideais para uso interno.Você também pode usá - los para divulgar sua marca ou mensagem, aplicando - os em embalagens, cadernos, agendas e muito mais.Seja criativo e adicione um toque pessoal aos seus pertences com adesivos personalizados de papel!";
@@ -348,9 +346,6 @@ produto24.onclick = function () {
     chamarSlideModal(lista24);
 }
 
-
-
-
 var lista1 = [
     "url('https://wilgnerjr.github.io/imagens/imgOtimizada/Adesivo/adesivo.png')",
     "url('https://wilgnerjr.github.io/imagens/imgOtimizada/Adesivo/adesivo1.webp')",
@@ -495,12 +490,6 @@ var lista24 = [
     "url('https://wilgnerjr.github.io/imagens/imgOtimizada/scanner/scanner2.jpg')",
     "url('https://wilgnerjr.github.io/imagens/imgOtimizada/scanner/scanner3.png')"
 ];
-
-
-
-
-
-
 
 function chamarSlideModal(lista) {
     let i = 1;
