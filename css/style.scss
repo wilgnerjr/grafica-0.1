@@ -679,292 +679,264 @@ body {
                     }
                 }
             }
+        }
 
-            // =========CLIENTES==========
-            
-            #clientes {
-                background: url('https://img.freepik.com/fotos-premium/gradiente-de-tom-pastel-rosa-azul-roxo-desfocado-foto-abstrata-linhas-suaves-pantone-cor-de-fundo_49683-4059.jpg');
-                background-repeat: no-repeat;
-                background-position: center;
-                background-size: cover;
-                min-height: 100vh;
-                padding-bottom: 20px;
+        // ============CLIENTES==========
+        .clientes {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            scroll-margin-top: 50px;
+            padding: 15px;
+            background-image: radial-gradient(circle, #f3e7ff, #9b59b6, purple);
 
-                h2 {
-                    font-size: 2rem;
-                    font-family: 'Lily Script One', cursive;
-                    color: #961616;
-                    letter-spacing: 3px;
-                    text-shadow: -1px -1px 0 #ffffff, 1px -1px 0 #ffffff, -1px 1px 0 #ffffff, 1px 1px 0 #ffffff;
-                }
+            h2 {
+                -webkit-user-select: none;
+                user-select: none;
+                padding: 20px;
+                font-size: 40px;
+                color: #961616;
+                font-family: 'Stick No Bills', sans-serif;
+                letter-spacing: 3px;
+                text-shadow: -1px -1px 0 #ffffff, 1px -1px 0 #ffffff, -1px 1px 0 #ffffff, 1px 1px 0 #ffffff;
+            }
 
-                .logoClientes {
-                    margin: 0 auto;
-                    max-width: 700px;
-                    padding: 10px;
+            .logoClientes {
+                margin: 0 auto;
+                max-width: 700px;
+                padding: 10px;
+                display: flex;
+                justify-content: center;
+                flex-wrap: wrap;
+                height: 100%;
+                background-color: #da000000;
+                gap: 1px;
+
+                .cliente {
                     display: flex;
-                    justify-content: center;
-                    flex-wrap: wrap;
-                    height: 100%;
-                    background-color: #da000000;
-                    gap: 1px;
-
-                    .cliente {
-                        display: flex;
-                        align-items: center;
-                        justify-content: center;
-                        width: 150px;
-                        height: 150px;
-                        margin: 5px;
-                        border: 2px solid rgb(152, 62, 255);
-                        box-shadow: 0px 0px 5px 1px rgb(255, 255, 255);
-                        border-radius: 50%;
-                        transition: all ease .4s;
-
-                        &:hover {
-                            cursor: pointer;
-                            transform: scale(0.9);
-                            border: 2px solid #961616;
-                            box-shadow: 0px 0px 10px 1px #ffffff;
-                        }
-                    }
-
-                    .cliente1 {
-                        background: url('https://hml.aprosoja.com.br/wp-content/uploads/2022/07/logo-aprosoja-rodape.png');
-                        background-size: contain;
-                        background-position: center;
-                        background-repeat: no-repeat;
-                        background-color: rgb(255, 255, 255);
-
-                    }
-
-                    .cliente2 {
-                        background: url('https://btsenergia.com.br/wp-content/uploads/2022/09/bom-futuro-3.png');
-                        background-size: contain;
-                        background-position: center;
-                        background-repeat: no-repeat;
-                        background-color: rgb(255, 255, 255);
-
-                    }
-
-                    .cliente3 {
-                        background: url('https://static.vagas.com.br/portais-de-carreira/images/components/box_divisions/original/box-vagas-logo-amaggi?1588103090');
-                        background-size: contain;
-                        background-position: center;
-                        background-repeat: no-repeat;
-                        background-color: rgb(255, 255, 255);
-                    }
-
-                    .cliente4 {
-                        background: url('https://logodetimes.com/times/cuiaba/logo-cuiaba-2048.png');
-                        background-size: contain;
-                        background-position: center;
-                        background-repeat: no-repeat;
-                        background-color: rgb(255, 255, 255);
-
-                    }
-
-                    .cliente5 {
-                        background: url('https://static01.eu/ofertasy.com.br/images/store/179.png');
-                        background-size: contain;
-                        background-position: center;
-                        background-repeat: no-repeat;
-                        background-color: rgb(255, 255, 255);
-
-                    }
-
-                    .cliente6 {
-                        background: url('https://upload.wikimedia.org/wikipedia/commons/a/a9/Banco_Bradesco_logo_%28vertical%29.png');
-                        background-size: contain;
-                        background-position: center;
-                        background-repeat: no-repeat;
-                        background-color: rgb(255, 255, 255);
-                    }
-
-                    .cliente7 {
-                        background-image: url('https://media.licdn.com/dms/image/C4D03AQFrjWxkmfFQDg/profile-displayphoto-shrink_800_800/0/1517584155759?e=2147483647&v=beta&t=M-CjB_ccx7qDsGqz-MQay1KuaNRYvtQWRHNodmtfKzo');
-                        background-size: contain;
-                        background-position: center;
-                        background-repeat: no-repeat;
-                    }
-
-                    .cliente8 {
-                        background: url('https://sistemafamato.org.br/wp-content/uploads/2021/11/Selos-Famato-Chapado-1024x1024.png');
-                        background-size: contain;
-                        background-position: center;
-                        background-repeat: no-repeat;
-                    }
-
-                }
-
-                h3 {
-                    font-family: 'Stick No Bills', sans-serif;
-                    text-align: center;
-                    color: white;
-                    font-size: 2rem;
-                    margin: 25px 0px 5px 0px;
-                }
-
-                .avaliacoes {
-                    width: 650px;
-                    height: 160px;
-                    display: flex;
-                    flex-direction: row;
                     align-items: center;
-                    overflow-x: scroll;
-                    margin: 0 auto;
+                    justify-content: center;
+                    width: 150px;
+                    height: 150px;
+                    margin: 5px;
+                    border: 2px solid rgb(152, 62, 255);
+                    box-shadow: 0px 0px 5px 1px rgb(255, 255, 255);
+                    border-radius: 50%;
+                    transition: all ease .4s;
+
+                    background-size: contain;
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    background-color: rgb(255, 255, 255);
+
+                    &:hover {
+                        cursor: pointer;
+                        transform: scale(0.9);
+                        border: 2px solid #961616;
+                        box-shadow: 0px 0px 10px 1px #ffffff;
+                    }
+                }
+
+                .cliente1 {
+                    background-image: url('https://wilgnerjr.github.io/imagens/imgOtimizada/logoClientes/iconeAprosoja.png');
+                }
+
+                .cliente2 {
+                    background-image: url('https://wilgnerjr.github.io/imagens/imgOtimizada/logoClientes/iconeBomFuturo.webp');
+                }
+
+                .cliente3 {
+                    background-image: url('https://wilgnerjr.github.io/imagens/imgOtimizada/logoClientes/iconeAmaggi.png');
+                }
+
+                .cliente4 {
+                    background-image: url('https://wilgnerjr.github.io/imagens/imgOtimizada/logoClientes/iconeCuiaba.png');
+                }
+
+                .cliente5 {
+                    background-image: url('https://wilgnerjr.github.io/imagens/imgOtimizada/logoClientes/iconeDrogasil.png');
+                }
+
+                .cliente6 {
+                    background-image: url('https://wilgnerjr.github.io/imagens/imgOtimizada/logoClientes/iconeBancoBradesco.png');
+                }
+
+                .cliente7 {
+                    background-image: url('https://wilgnerjr.github.io/imagens/imgOtimizada/logoClientes/iconeHospitalS%C3%A3oMateus.jpg');
+                }
+
+                .cliente8 {
+                    background-image: url('https://wilgnerjr.github.io/imagens/imgOtimizada/logoClientes/iconeFamato.png');
+                }
+            }
+
+            h3 {
+                font-family: 'Stick No Bills', sans-serif;
+                text-align: center;
+                color: #961616;
+                font-size: 2rem;
+                margin: 25px 0px 5px 0px;
+            }
+
+            .avaliacoes {
+                width: 650px;
+                height: 160px;
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                overflow-x: scroll;
+                margin: 0 auto;
+                border: 2px solid white;
+                background-color: rgba(0, 255, 255, 0);
+                border-radius: 5px;
+
+                .avaliacaoCliente {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-around;
+                    align-items: center;
+                    min-width: 114px;
+                    height: 120px;
+                    margin: 5px 5px;
                     border: 2px solid white;
-                    background-color: rgba(0, 255, 255, 0);
-                    border-radius: 5px;
+                    background-color: rgba(204, 204, 204, 0);
+                    border-radius: 8px;
+                    color: white;
+                }
 
-                    .avaliacaoCliente {
-                        display: flex;
-                        flex-direction: column;
-                        justify-content: space-around;
-                        align-items: center;
-                        min-width: 114px;
-                        height: 120px;
-                        margin: 5px 5px;
-                        border: 2px solid white;
-                        background-color: rgba(204, 204, 204, 0);
-                        border-radius: 8px;
-                        color: white;
+                .avaliacaoCliente1 {
+                    .avaliacaoCliente1Imagem {
+                        width: 60px;
+                        height: 60px;
+                        border-radius: 50%;
+                        margin: 0px;
+                        border: 2px solid rgb(255, 255, 255);
+                        background-image: url('https://wilgnerjr.github.io/imagens/imgOtimizada/logoClientes/cliente.webp');
+                        background-size: cover;
                     }
 
-                    .avaliacaoCliente1 {
-                        .avaliacaoCliente1Imagem {
-                            width: 60px;
-                            height: 60px;
-                            border-radius: 50%;
-                            margin: 0px;
-                            border: 2px solid rgb(255, 255, 255);
-                            background-image: url('https://wilgnerjr.github.io/portifolio-2.0/imagens/eu.webp');
-                            background-size: cover;
-                        }
-
-                        .estrelasCliente1 {
-                            .fa-star {
-                                color: gold;
-                            }
+                    .estrelasCliente1 {
+                        .fa-star {
+                            color: gold;
                         }
                     }
+                }
 
-                    // 
-                    .avaliacaoCliente2 {
-                        .avaliacaoCliente2Imagem {
-                            width: 60px;
-                            height: 60px;
-                            border-radius: 50%;
-                            margin: 0px;
-                            border: 2px solid rgb(255, 255, 255);
-                            background-image: url('https://wilgnerjr.github.io/portifolio-2.0/imagens/eu.webp');
-                            background-size: cover;
-                        }
-
-                        .estrelasCliente2 {
-                            .fa-star {
-                                color: gold;
-                            }
-                        }
+                // 
+                .avaliacaoCliente2 {
+                    .avaliacaoCliente2Imagem {
+                        width: 60px;
+                        height: 60px;
+                        border-radius: 50%;
+                        margin: 0px;
+                        border: 2px solid rgb(255, 255, 255);
+                        background-image: url('https://wilgnerjr.github.io/imagens/imgOtimizada/logoClientes/cliente.webp');
+                        background-size: cover;
                     }
 
-                    // 
-                    .avaliacaoCliente3 {
-                        .avaliacaoCliente3Imagem {
-                            width: 60px;
-                            height: 60px;
-                            border-radius: 50%;
-                            margin: 0px;
-                            border: 2px solid rgb(255, 255, 255);
-                            background-image: url('https://wilgnerjr.github.io/portifolio-2.0/imagens/eu.webp');
-                            background-size: cover;
-                        }
-
-                        .estrelasCliente3 {
-                            .fa-star {
-                                color: gold;
-                            }
+                    .estrelasCliente2 {
+                        .fa-star {
+                            color: gold;
                         }
                     }
+                }
 
-                    // 
-                    .avaliacaoCliente4 {
-                        .avaliacaoCliente4Imagem {
-                            width: 60px;
-                            height: 60px;
-                            border-radius: 50%;
-                            margin: 0px;
-                            border: 2px solid rgb(255, 255, 255);
-                            background-image: url('https://wilgnerjr.github.io/portifolio-2.0/imagens/eu.webp');
-                            background-size: cover;
-                        }
-
-                        .estrelasCliente4 {
-                            .fa-star {
-                                color: gold;
-                            }
-                        }
+                // 
+                .avaliacaoCliente3 {
+                    .avaliacaoCliente3Imagem {
+                        width: 60px;
+                        height: 60px;
+                        border-radius: 50%;
+                        margin: 0px;
+                        border: 2px solid rgb(255, 255, 255);
+                        background-image: url('https://wilgnerjr.github.io/imagens/imgOtimizada/logoClientes/cliente.webp');
+                        background-size: cover;
                     }
 
-                    // 
-                    .avaliacaoCliente5 {
-                        .avaliacaoCliente5Imagem {
-                            width: 60px;
-                            height: 60px;
-                            border-radius: 50%;
-                            margin: 0px;
-                            border: 2px solid rgb(255, 255, 255);
-                            background-image: url('https://wilgnerjr.github.io/portifolio-2.0/imagens/eu.webp');
-                            background-size: cover;
-                        }
-
-                        .estrelasCliente5 {
-                            .fa-star {
-                                color: gold;
-                            }
+                    .estrelasCliente3 {
+                        .fa-star {
+                            color: gold;
                         }
                     }
+                }
 
-                    // 
-                    .avaliacaoCliente6 {
-                        .avaliacaoCliente6Imagem {
-                            width: 60px;
-                            height: 60px;
-                            border-radius: 50%;
-                            margin: 0px;
-                            border: 2px solid rgb(255, 255, 255);
-                            background-image: url('https://wilgnerjr.github.io/portifolio-2.0/imagens/eu.webp');
-                            background-size: cover;
-                        }
-
-                        .estrelasCliente6 {
-                            .fa-star {
-                                color: gold;
-                            }
-                        }
+                // 
+                .avaliacaoCliente4 {
+                    .avaliacaoCliente4Imagem {
+                        width: 60px;
+                        height: 60px;
+                        border-radius: 50%;
+                        margin: 0px;
+                        border: 2px solid rgb(255, 255, 255);
+                        background-image: url('https://wilgnerjr.github.io/imagens/imgOtimizada/logoClientes/cliente.webp');
+                        background-size: cover;
                     }
 
-                    // 
-                    .avaliacaoCliente7 {
-                        .avaliacaoCliente7Imagem {
-                            width: 60px;
-                            height: 60px;
-                            border-radius: 50%;
-                            margin: 0px;
-                            border: 2px solid rgb(255, 255, 255);
-                            background-image: url('https://wilgnerjr.github.io/portifolio-2.0/imagens/eu.webp');
-                            background-size: cover;
+                    .estrelasCliente4 {
+                        .fa-star {
+                            color: gold;
                         }
+                    }
+                }
 
-                        .estrelasCliente7 {
-                            .fa-star {
-                                color: gold;
-                            }
+                // 
+                .avaliacaoCliente5 {
+                    .avaliacaoCliente5Imagem {
+                        width: 60px;
+                        height: 60px;
+                        border-radius: 50%;
+                        margin: 0px;
+                        border: 2px solid rgb(255, 255, 255);
+                        background-image: url('https://wilgnerjr.github.io/imagens/imgOtimizada/logoClientes/cliente.webp');
+                        background-size: cover;
+                    }
+
+                    .estrelasCliente5 {
+                        .fa-star {
+                            color: gold;
+                        }
+                    }
+                }
+
+                // 
+                .avaliacaoCliente6 {
+                    .avaliacaoCliente6Imagem {
+                        width: 60px;
+                        height: 60px;
+                        border-radius: 50%;
+                        margin: 0px;
+                        border: 2px solid rgb(255, 255, 255);
+                        background-image: url('https://wilgnerjr.github.io/imagens/imgOtimizada/logoClientes/cliente.webp');
+                        background-size: cover;
+                    }
+
+                    .estrelasCliente6 {
+                        .fa-star {
+                            color: gold;
+                        }
+                    }
+                }
+
+                // 
+                .avaliacaoCliente7 {
+                    .avaliacaoCliente7Imagem {
+                        width: 60px;
+                        height: 60px;
+                        border-radius: 50%;
+                        margin: 0px;
+                        border: 2px solid rgb(255, 255, 255);
+                        background-image: url('https://wilgnerjr.github.io/imagens/imgOtimizada/logoClientes/cliente.webp');
+                        background-size: cover;
+                    }
+
+                    .estrelasCliente7 {
+                        .fa-star {
+                            color: gold;
                         }
                     }
                 }
             }
-
         }
     }
 
@@ -1176,15 +1148,15 @@ body {
                 }
 
                 .missao {
-                    width: 40%;
+                    width: 45%;
                 }
 
                 .visao {
-                    width: 40%;
+                    width: 45%;
                 }
 
                 .valores {
-                    width: 20%;
+                    width: 10%;
                 }
             }
 
@@ -1209,6 +1181,13 @@ body {
                             grid-template-rows: auto auto;
                         }
                     }
+                }
+            }
+
+            // =========CLIENTES==========
+            .clientes {
+                .avaliacoes {
+                    width: 90%;
                 }
             }
         }
@@ -1349,6 +1328,10 @@ body {
                 .portifolioProdutos {
                     background-color: transparent;
                     border: none;
+                    .produto{
+                        width: 85px;
+                        height: 85px;
+                    }
                 }
 
                 // ===========MODAL==========
@@ -1409,6 +1392,27 @@ body {
                     }
                 }
             }
+
+            // =========CLIENTES==========
+            .clientes {
+                .logoClientes {
+                    .cliente {
+                        width: 80px;
+                        height: 80px;
+                    }
+                }
+
+                .avaliacoes {
+                    width: 100%;
+                    height: 150px;
+                    padding: 3px 0;
+
+                    .avaliacaoCliente {
+                        height: 100px;
+                        padding: 5px;
+                    }
+                }
+            }
         }
     }
 }
@@ -1451,5 +1455,41 @@ body {
 
     to {
         left: 15%;
+    }
+}
+
+@-webkit-keyframes animaWhatsApp {
+    0% {
+        color: green;
+        background: white;
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.1);
+        color: white;
+        background: green;
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes animaWhatsApp {
+    0% {
+        color: green;
+        background: white;
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.1);
+        color: white;
+        background: green;
+    }
+
+    100% {
+        transform: scale(1);
     }
 }
