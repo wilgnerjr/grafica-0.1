@@ -938,9 +938,358 @@ body {
                 }
             }
         }
+
+        // ==========CONTATO==========
+
+        #contato {
+            width: 100%;
+            height: 100%;
+            padding: 20px 0;
+            background-image: radial-gradient(circle, #525252, #404040, rgb(0, 0, 0));
+            scroll-margin-top: 70px;
+
+            h2 {
+                font-size: 40px;
+                font-family: 'Stick No Bills', sans-serif;
+                color: white;
+                letter-spacing: 3px;
+                text-shadow: 0px 0px 6px black;
+                text-align: center;
+            }
+
+            .areaContato {
+                width: 100%;
+                height: 100%;
+                display: grid;
+                grid-template-columns: 50% 50%;
+                padding: 0 20px 20px;
+                color: white;
+
+                .redesSociais {
+                    display: flex;
+                    align-items: center;
+                    flex-direction: column;
+                    width: 100%;
+                    height: 100%;
+                    background-color: rgba(0, 0, 255, 0);
+                    margin: 10px 0;
+
+                    .titleRedesScociais {
+                        h2 {
+                            font-family: 'Stick No Bills', sans-serif;
+                            font-size: 2rem;
+                            letter-spacing: 18px;
+                            text-shadow: 0px 0px 10px black;
+                        }
+                    }
+
+                    div {
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        width: 90px;
+                        height: 90px;
+
+                        a {
+                            .redeInstagram {
+                                background-color: #ffffff;
+                                border-radius: 10px;
+                                transition: all ease-in-out .3s;
+                                border: 2px solid transparent;
+                                font-size: 2rem;
+                                background: rgba(255, 255, 255, 0.3);
+                                box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+                                // backdrop-filter: blur(4px);
+                                // -webkit-backdrop-filter: blur(4px);
+                                border-radius: 10px;
+                                border: 2px solid rgba(255, 255, 255, 0.18);
+
+                                .fa-instagram {
+                                    display: flex;
+                                    align-items: center;
+                                    justify-content: center;
+                                    width: 90px;
+                                    height: 90px;
+                                    // background-image: linear-gradient(to bottom, purple, red);
+                                    // background-clip: text;
+                                    // -webkit-background-clip: text;
+                                    // -webkit-text-fill-color: transparent;
+                                    color: rgb(223, 91, 91);
+                                }
+
+                                &:hover {
+                                    border-radius: 50%;
+                                    background-color: white;
+                                    border: 2px solid #961616;
+                                    font-size: 2.2rem;
+                                    box-shadow: none;
+                                }
+                            }
+                        }
+                    }
+
+                    .fa-facebook {
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        width: 90px;
+                        height: 90px;
+                        color: #3B5998;
+                        background-color: #ffffff;
+                        border-radius: 10px;
+                        transition: all ease-in-out .3s;
+                        border: 2px solid transparent;
+                        font-size: 2rem;
+                        margin: 10px;
+                        background: rgba(255, 255, 255, 0.3);
+                        box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+                        // backdrop-filter: blur(4px);
+                        // -webkit-backdrop-filter: blur(4px);
+                        border-radius: 10px;
+                        border: 1px solid rgba(255, 255, 255, 0.18);
+
+                        &:hover {
+                            border-radius: 50%;
+                            background-color: white;
+                            border: 2px solid #3B5998;
+                            font-size: 2.2rem;
+                            box-shadow: none;
+                        }
+                    }
+
+                    .fa-whatsapp {
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        width: 90px;
+                        height: 90px;
+                        color: #25D366;
+                        background-color: #ffffff;
+                        border-radius: 10px;
+                        transition: all ease-in-out .3s;
+                        border: 2px solid transparent;
+                        font-size: 2rem;
+                        margin: 10px;
+                        background: rgba(255, 255, 255, 0.3);
+                        box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+                        // backdrop-filter: blur(4px);
+                        // -webkit-backdrop-filter: blur(4px);
+                        border-radius: 10px;
+                        border: 1px solid rgba(255, 255, 255, 0.18);
+
+                        &:hover {
+                            border-radius: 50%;
+                            background-color: white;
+                            border: 2px solid #25D366;
+                            box-shadow: none;
+                            font-size: 2.2rem;
+                        }
+                    }
+                }
+
+                .formulario {
+                    margin: 0 auto;
+                    max-width: 500px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    flex-direction: column;
+                    padding: 20px;
+                    border-radius: 8px;
+                    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+
+                    h2 {
+                        color: #f5f5f5;
+                        border-radius: 8px;
+                        font-size: 2.5rem;
+                        font-family: sans-serif;
+                        // background: rgba(255, 255, 255, 0.719);
+                        box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+                        // backdrop-filter: blur(20px);
+                        // -webkit-backdrop-filter: blur(20px);
+                        border-radius: 10px;
+                        // border: 1px solid #961616;
+                    }
+
+                    form {
+                        max-height: 400px;
+                        display: flex;
+                        flex-direction: column;
+                        width: 100%;
+
+                        label {
+                            color: #fffdfd;
+                            font-size: 20px;
+                            font-weight: bold;
+                            margin-bottom: 4px;
+                            text-shadow: 0px 0px 5px #961616;
+                        }
+
+                        input {
+                            padding: 10px;
+                            border: 1px solid red;
+                            margin-bottom: 10px;
+                            font-size: 15px;
+                            outline: none;
+                            transition: .3s;
+                            color: #363636;
+                            background: rgba(255, 255, 255, 0.5);
+                            box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+                            border-radius: 3px;
+                            border: 1px solid rgb(255, 255, 255);
+
+                            &:focus {
+                                color: #961616;
+                                border: 1px solid #961616;
+                                border-radius: 10px;
+                            }
+                        }
+
+                        textarea {
+                            resize: none;
+                            padding: 10px;
+                            outline: none;
+                            border: 0;
+                            font-size: 15px;
+                            margin-bottom: 30px;
+                            transition: all 0.3s;
+                            color: #363636;
+                            background: rgba(255, 255, 255, 0.5);
+                            box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+                            border-radius: 3px;
+                            border: 1px solid rgb(255, 255, 255);
+
+                            &:focus {
+                                color: #961616;
+                                border: 1px solid #961616;
+                                border-radius: 10px;
+                            }
+                        }
+
+                        button {
+                            padding: 15px;
+                            cursor: pointer;
+                            font-size: 16px;
+                            background-color: transparent;
+                            border: 1px solid white;
+                            color: white;
+                            transition: all .5s;
+                            margin-bottom: 15px;
+
+                            &:hover {
+                                background-color: #f5f5f5;
+                                color: green;
+                                border-radius: 10px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .whatsAppFlutuante {
+            a {
+                .fa-whatsapp {
+                    z-index: 1;
+                    position: fixed;
+                    bottom: 15px;
+                    right: 15px;
+                    width: 50px;
+                    height: 50px;
+                    border-radius: 50%;
+                    font-size: 25px;
+                    color: green;
+                    background-color: white;
+                    border: 2px solid black;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    animation-name: animaWhatsApp;
+                    animation-duration: 2s;
+                    animation-iteration-count: infinite;
+                }
+            }
+        }
+
+        // ===========FOOTER==========
+        footer {
+            display: flex;
+            justify-content: space-around;
+            padding: 20px 10px;
+            width: 100%;
+            height: 100%;
+            background-color: #5e5e5e;
+
+            .endereco {
+                h2 {
+                    font-family: 'Stick No Bills', sans-serif;
+                    color: white;
+                    margin: 25px 0px;
+                    text-shadow: none;
+                }
+
+                address {
+                    text-align: justify;
+                    line-height: 25px;
+                    color: #ffffff;
+                    font-size: 1.2rem;
+                    font-family: sans-serif;
+                    text-shadow: 0px 0px 5px rgb(0, 0, 0);
+
+                    .geolocalizacao {
+                        max-width: 500px;
+                        padding: 20px 0px;
+
+                        iframe {
+                            margin: 0 auto;
+                            width: 100%;
+                            border: 2px solid #ffffff;
+                            border-radius: 8px;
+                        }
+                    }
+                }
+            }
+
+            .horarioDeFuncionamentofooter {
+                display: flex;
+                flex-direction: column;
+
+                div {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+
+                    h2 {
+                        font-family: 'Stick No Bills', sans-serif;
+                        color: white;
+                        margin: 20px 0;
+                    }
+
+                    p {
+                        text-align: left;
+                        // line-height: 20px;
+                        font-weight: bold;
+                        color: white;
+                        // margin: 10px 0;
+
+                    }
+                }
+
+                img {
+                    margin-top: 55px;
+                    width: 300px;
+                    height: 210px;
+                    border-radius: 5px;
+                    border: 1px solid white;
+                    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+                }
+            }
+        }
     }
 
 }
+
+
 
 
 
@@ -1190,6 +1539,65 @@ body {
                     width: 90%;
                 }
             }
+
+            // ==========CONTATO==========
+            #contato {
+                .areaContato {
+                    display: grid;
+                    flex-wrap: wrap;
+                    grid-template-columns: 100%;
+                }
+            }
+
+            // ==========FOOTER==========
+            footer {
+                flex-direction: column-reverse;
+
+                .horarioDeFuncionamentofooter {
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-around;
+                    flex-direction: row;
+
+                    div {
+                        display: flex;
+                        flex-direction: column;
+                        align-items: normal;
+                        justify-content: center;
+
+                        h2 {
+                            padding-left: 20px;
+                            text-align: left;
+                            font-size: 1.5rem;
+                        }
+
+                        p {
+
+                            margin: 10px 5px;
+                            font-size: 1.2rem;
+                            padding-left: 20px;
+                            text-align: left;
+                        }
+                    }
+
+                    img {
+                        width: 150px;
+                        height: 150px;
+                        border-radius: 8px;
+                        border: 1px solid white;
+                        box-shadow: 0px 0px 40px black;
+                        margin: 5px;
+                    }
+                }
+
+                .endereco {
+                    margin: 2rem;
+
+                    h2 {
+                        text-align: center;
+                    }
+                }
+            }
         }
     }
 }
@@ -1328,7 +1736,8 @@ body {
                 .portifolioProdutos {
                     background-color: transparent;
                     border: none;
-                    .produto{
+
+                    .produto {
                         width: 85px;
                         height: 85px;
                     }
@@ -1410,6 +1819,65 @@ body {
                     .avaliacaoCliente {
                         height: 100px;
                         padding: 5px;
+                    }
+                }
+            }
+
+            // ==========CONTATOS==========
+            #contato {
+                .areaContato {
+                    display: grid;
+                    flex-wrap: wrap;
+                    grid-template-columns: 100%;
+
+                }
+            }
+
+            footer {
+                flex-direction: column-reverse;
+
+                .horarioDeFuncionamentofooter {
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-around;
+                    flex-direction: row;
+
+                    div {
+                        display: flex;
+                        flex-direction: column;
+                        align-items: normal;
+                        justify-content: center;
+
+                        h2 {
+                            padding-left: 20px;
+                            text-align: left;
+                            font-size: 1.5rem;
+                        }
+
+                        p {
+
+                            margin: 10px 5px;
+                            font-size: 1.2rem;
+                            padding-left: 20px;
+                            text-align: left;
+                        }
+                    }
+
+                    img {
+                        width: 150px;
+                        height: 150px;
+                        border-radius: 8px;
+                        border: 1px solid white;
+                        box-shadow: 0px 0px 40px black;
+                        margin: 5px;
+                    }
+                }
+
+                .endereco {
+                    margin: 2rem;
+
+                    h2 {
+                        text-align: center;
                     }
                 }
             }
