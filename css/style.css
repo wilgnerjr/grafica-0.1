@@ -181,7 +181,7 @@ body header .navbar .hamburger .bar {
 body main .slider {
   position: relative;
   width: 100%;
-  background-color: rgb(80, 80, 80);
+  background-color: rgb(146, 146, 146);
   border-bottom: 2.5px solid #961616;
 }
 body main .slider :first-child {
@@ -194,7 +194,6 @@ body main .slider .myslider {
 }
 body main .slider .myslider .sliderTxt {
   position: absolute;
-  color: white;
   letter-spacing: 2px;
   line-height: 35px;
   top: 40%;
@@ -211,6 +210,7 @@ body main .slider .myslider .sliderTxt h1 {
   margin-bottom: 20px;
 }
 body main .slider .myslider .sliderTxt p {
+  color: #3B5998;
   font-weight: bold;
   font-size: 20px;
 }

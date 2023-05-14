@@ -226,7 +226,7 @@ body {
         .slider {
             position: relative;
             width: 100%;
-            background-color: rgb(80, 80, 80);
+            background-color: rgb(146, 146, 146);
             border-bottom: 2.5px solid #961616;
 
             :first-child {
@@ -240,7 +240,6 @@ body {
 
                 .sliderTxt {
                     position: absolute;
-                    color: white;
                     letter-spacing: 2px;
                     line-height: 35px;
                     top: 40%;
@@ -258,6 +257,7 @@ body {
                     }
 
                     p {
+                        color: #3B5998;
                         font-weight: bold;
                         font-size: 20px;
                     }
