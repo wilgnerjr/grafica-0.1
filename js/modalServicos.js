@@ -37,8 +37,7 @@ produto1.onclick = function () {
 
     imgModal.style.backgroundImage = "url('https://wilgnerjr.github.io/imagens/imgOtimizada/Adesivo/adesivo.webp')";
 
-    body.style.width = "100%";
-    body.style.height = "100%";
+    
     body.style.overflow = "hidden";
     modal.style.display = "block";
     chamarSlideModal(lista1);
@@ -51,8 +50,7 @@ produto2.onclick = function () {
     imgModal.style.backgroundImage = "url('https://wilgnerjr.github.io/imagens/imgOtimizada/banner/banner.webp')";
 
 
-    body.style.width = "100%";
-    body.style.height = "100%";
+    
     body.style.overflow = "hidden";
     modal.style.display = "block";
 
@@ -64,8 +62,7 @@ produto3.onclick = function () {
 
     imgModal.style.backgroundImage = "url('https://wilgnerjr.github.io/imagens/imgOtimizada/blocoDeComanda/blocoDeComanda.webp')";
 
-    body.style.width = "100%";
-    body.style.height = "100%";
+    
     body.style.overflow = "hidden";
     modal.style.display = "block";
 
@@ -77,8 +74,7 @@ produto4.onclick = function () {
 
     imgModal.style.backgroundImage = "url('https://wilgnerjr.github.io/imagens/imgOtimizada/caixaPersonalizada/caixaPersonalizada.webp')";
 
-    body.style.width = "100%";
-    body.style.height = "100%";
+    
     body.style.overflow = "hidden";
     modal.style.display = "block";
 
@@ -90,8 +86,7 @@ produto5.onclick = function () {
 
     imgModal.style.backgroundImage = "url('https://wilgnerjr.github.io/imagens/imgOtimizada/Calendario/calendario.webp')";
 
-    body.style.width = "100%";
-    body.style.height = "100%";
+    
     body.style.overflow = "hidden";
     modal.style.display = "block";
 
@@ -103,8 +98,7 @@ produto6.onclick = function () {
 
     imgModal.style.backgroundImage = "url('https://wilgnerjr.github.io/imagens/imgOtimizada/Camisa/camisa.webp')";
 
-    body.style.width = "100%";
-    body.style.height = "100%";
+    
     body.style.overflow = "hidden";
     modal.style.display = "block";
 
@@ -116,8 +110,7 @@ produto7.onclick = function () {
 
     imgModal.style.backgroundImage = "url('https://wilgnerjr.github.io/imagens/imgOtimizada/Cardapio/cardapio.webp')";
 
-    body.style.width = "100%";
-    body.style.height = "100%";
+    
     body.style.overflow = "hidden";
     modal.style.display = "block";
 
@@ -129,8 +122,7 @@ produto8.onclick = function () {
 
     imgModal.style.backgroundImage = "url('https://wilgnerjr.github.io/imagens/imgOtimizada/carimbos/carimbo.webp')";
 
-    body.style.width = "100%";
-    body.style.height = "100%";
+    
     body.style.overflow = "hidden";
     modal.style.display = "block";
 
@@ -142,8 +134,7 @@ produto9.onclick = function () {
 
     imgModal.style.backgroundImage = "url('https://wilgnerjr.github.io/imagens/imgOtimizada/cartaoDeVisita/cartaoDeVisita.webp')";
 
-    body.style.width = "100%";
-    body.style.height = "100%";
+    
     body.style.overflow = "hidden";
     modal.style.display = "block";
 
@@ -155,8 +146,7 @@ produto10.onclick = function () {
 
     imgModal.style.backgroundImage = "url('https://wilgnerjr.github.io/imagens/imgOtimizada/chaveiro/chaveiro.webp')";
 
-    body.style.width = "100%";
-    body.style.height = "100%";
+    
     body.style.overflow = "hidden";
     modal.style.display = "block";
 
@@ -168,8 +158,7 @@ produto11.onclick = function () {
 
     imgModal.style.backgroundImage = "url('https://wilgnerjr.github.io/imagens/imgOtimizada/convite/convite.webp')";
 
-    body.style.width = "100%";
-    body.style.height = "100%";
+    
     body.style.overflow = "hidden";
     modal.style.display = "block";
 
@@ -181,8 +170,7 @@ produto12.onclick = function () {
 
     imgModal.style.backgroundImage = "url('https://wilgnerjr.github.io/imagens/imgOtimizada/copia/copia.webp')";
 
-    body.style.width = "100%";
-    body.style.height = "100%";
+    
     body.style.overflow = "hidden";
     modal.style.display = "block";
 
@@ -195,8 +183,7 @@ produto13.onclick = function () {
 
     imgModal.style.backgroundImage = "url('https://wilgnerjr.github.io/imagens/imgOtimizada/Caneca/caneca.webp')";
 
-    body.style.width = "100%";
-    body.style.height = "100%";
+    
     body.style.overflow = "hidden";
     modal.style.display = "block";
 
@@ -208,8 +195,7 @@ produto14.onclick = function () {
 
     imgModal.style.backgroundImage = "url('https://wilgnerjr.github.io/imagens/imgOtimizada/cracha/cracha.webp')";
 
-    body.style.width = "100%";
-    body.style.height = "100%";
+    
     body.style.overflow = "hidden";
     modal.style.display = "block";
 
@@ -221,8 +207,7 @@ produto15.onclick = function () {
 
     imgModal.style.backgroundImage = "url('https://wilgnerjr.github.io/imagens/imgOtimizada/credencial/credencial.webp')";
 
-    body.style.width = "100%";
-    body.style.height = "100%";
+    
     body.style.overflow = "hidden";
     modal.style.display = "block";
 
@@ -234,8 +219,7 @@ produto16.onclick = function () {
 
     imgModal.style.backgroundImage = "url('https://wilgnerjr.github.io/imagens/imgOtimizada/display/display.webp')";
 
-    body.style.width = "100%";
-    body.style.height = "100%";
+    
     body.style.overflow = "hidden";
     modal.style.display = "block";
 
@@ -247,8 +231,7 @@ produto17.onclick = function () {
 
     imgModal.style.backgroundImage = "url('https://wilgnerjr.github.io/imagens/imgOtimizada/encadernacao/encadernacao.webp')";
 
-    body.style.width = "100%";
-    body.style.height = "100%";
+    
     body.style.overflow = "hidden";
     modal.style.display = "block";
 
@@ -260,8 +243,7 @@ produto18.onclick = function () {
 
     imgModal.style.backgroundImage = "url('https://wilgnerjr.github.io/imagens/imgOtimizada/ficha/ficha.webp')";
 
-    body.style.width = "100%";
-    body.style.height = "100%";
+    
     body.style.overflow = "hidden";
     modal.style.display = "block";
 
@@ -273,8 +255,7 @@ produto19.onclick = function () {
 
     imgModal.style.backgroundImage = "url('https://wilgnerjr.github.io/imagens/imgOtimizada/folder/folder.webp')";
 
-    body.style.width = "100%";
-    body.style.height = "100%";
+    
     body.style.overflow = "hidden";
     modal.style.display = "block";
 
@@ -286,8 +267,7 @@ produto20.onclick = function () {
 
     imgModal.style.backgroundImage = "url('https://wilgnerjr.github.io/imagens/imgOtimizada/impressora3D/impressora3D.webp')";
 
-    body.style.width = "100%";
-    body.style.height = "100%";
+    
     body.style.overflow = "hidden";
     modal.style.display = "block";
 
@@ -299,8 +279,7 @@ produto21.onclick = function () {
 
     imgModal.style.backgroundImage = "url('https://wilgnerjr.github.io/imagens/imgOtimizada/pasta/pasta.webp')";
 
-    body.style.width = "100%";
-    body.style.height = "100%";
+    
     body.style.overflow = "hidden";
     modal.style.display = "block";
 
@@ -312,8 +291,7 @@ produto22.onclick = function () {
 
     imgModal.style.backgroundImage = "url('https://wilgnerjr.github.io/imagens/imgOtimizada/plastificacao/plastificacao.webp')";
 
-    body.style.width = "100%";
-    body.style.height = "100%";
+    
     body.style.overflow = "hidden";
     modal.style.display = "block";
 
@@ -325,8 +303,7 @@ produto23.onclick = function () {
 
     imgModal.style.backgroundImage = "url('https://wilgnerjr.github.io/imagens/imgOtimizada/plotter/plotter.webp')";
 
-    body.style.width = "100%";
-    body.style.height = "100%";
+    
     body.style.overflow = "hidden";
     modal.style.display = "block";
 
@@ -338,8 +315,7 @@ produto24.onclick = function () {
 
     imgModal.style.backgroundImage = "url('https://wilgnerjr.github.io/imagens/imgOtimizada/scanner/scanner.webp')";
 
-    body.style.width = "100%";
-    body.style.height = "100%";
+    
     body.style.overflow = "hidden";
     modal.style.display = "block";
 

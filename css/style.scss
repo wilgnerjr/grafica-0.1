@@ -642,8 +642,6 @@ body {
                                 height: 200px;
                                 width: 200px;
                                 border-radius: 10px;
-                                // border: 1px solid red;
-                                // background-color: #961616;
                                 background-size: contain;
                                 background-position: center center;
                                 margin: 0 auto;
@@ -938,7 +936,6 @@ body {
         }
 
         // ==========CONTATO==========
-
         #contato {
             width: 100%;
             height: 100%;
@@ -995,8 +992,8 @@ body {
                                 transition: all ease-in-out .3s;
                                 border: 2px solid transparent;
                                 font-size: 2rem;
-                                background: rgba(255, 255, 255, 0.3);
-                                box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+                                background: rgba(110, 110, 110, 0.3);
+                                box-shadow: 0px 0px 15px 0 rgba(255, 0, 0, 0.37);
                                 border-radius: 10px;
                                 border: 2px solid rgba(255, 255, 255, 0.18);
 
@@ -1033,15 +1030,15 @@ body {
                         border: 2px solid transparent;
                         font-size: 2rem;
                         margin: 10px;
-                        background: rgba(255, 255, 255, 0.3);
-                        box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+                        background: rgba(110, 110, 110, 0.3);
+                        box-shadow: 0px 0px 15px 0 rgba(0, 78, 247, 0.37);
                         border-radius: 10px;
                         border: 1px solid rgba(255, 255, 255, 0.18);
 
                         &:hover {
                             border-radius: 50%;
                             background-color: white;
-                            border: 2px solid #3B5998;
+                            border: 2px solid rgb(59, 89, 152);
                             font-size: 2.2rem;
                             box-shadow: none;
                         }
@@ -1060,15 +1057,15 @@ body {
                         border: 2px solid transparent;
                         font-size: 2rem;
                         margin: 10px;
-                        background: rgba(255, 255, 255, 0.3);
-                        box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+                        background: rgba(110, 110, 110, 0.3);
+                        box-shadow: 0px 0px 15px 0 rgba(0, 255, 94, 0.37);
                         border-radius: 10px;
                         border: 1px solid rgba(255, 255, 255, 0.18);
 
                         &:hover {
                             border-radius: 50%;
                             background-color: white;
-                            border: 2px solid #25D366;
+                            border: 2px solid rgb(37, 211, 102);
                             box-shadow: none;
                             font-size: 2.2rem;
                         }
@@ -1091,7 +1088,6 @@ body {
                         border-radius: 8px;
                         font-size: 2.5rem;
                         font-family: sans-serif;
-                        box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
                         border-radius: 10px;
                     }
 
@@ -1116,12 +1112,14 @@ body {
                             font-size: 15px;
                             outline: none;
                             transition: .3s;
-                            color: #363636;
-                            background: rgba(255, 255, 255, 0.5);
-                            box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+                            background: rgb(33, 33, 33);
                             border-radius: 3px;
                             border: 1px solid rgb(255, 255, 255);
-
+                            
+                            &::placeholder{
+                                color: rgb(255, 255, 255);
+                            }
+                            
                             &:focus {
                                 color: #961616;
                                 border: 1px solid #961616;
@@ -1138,10 +1136,13 @@ body {
                             margin-bottom: 30px;
                             transition: all 0.3s;
                             color: #363636;
-                            background: rgba(255, 255, 255, 0.5);
-                            box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+                            background: rgb(34, 34, 34);
                             border-radius: 3px;
                             border: 1px solid rgb(255, 255, 255);
+
+                            &::placeholder{
+                                color: rgb(255, 255, 255);
+                            }
 
                             &:focus {
                                 color: #961616;
