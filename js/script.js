@@ -20,16 +20,7 @@ window.addEventListener('DOMContentLoaded', () => {
             body.style.overflow = 'visible';
         }, 3500);
     };
-    let horaAtual = new Date().getHours();
-    if (horaAtual >= 6 && horaAtual < 18) {
-    }
-    else {
-        intro.style.backgroundColor = 'black';
-        logo.style.color = 'gold';
-        logo.style.textShadow = '0px 0px 8px yellow';
-        introP.style.color = 'white';
-        introP.style.textShadow = '0px 0px 8px white';
-    };
+    
     setTimeout(() => {
         logoSpan.forEach((span, index) => {
             setTimeout(() => {
